@@ -16,7 +16,11 @@
     align-items: center;
     list-style: none;
     padding-left: 0;
-    margin-top: 6px;
+    margin: 6px -10px 6px;
+}
+
+.list-right {
+    margin-right: 2px;
 }
 
 .list__item {
@@ -519,7 +523,7 @@
     height: var(--search-height);
     display: flex;
     align-items: center;
-    margin: 0 -25px;
+    margin: 0 -34px 4px;
 }
 
 .search__logo {
@@ -945,5 +949,94 @@
 
 /* container */
 .container {
-    height: 3000px;
+    background-color: #F5F5F5;
+}
+
+.category {
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.category__heading {
+   color: var(--text-color);
+   display: flex;
+   align-items: center;
+   font-size: 3.2rem;
+   font-weight: 450;
+   padding: 6px 12px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category__heading-icon {
+   position: relative;
+   top: -1px;
+   font-size: 2.8rem;
+   margin-right: 7px;
+}
+
+.category__list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.category__list:hover .products__list {
+    display: block;
+}
+
+.category__list-item {
+    margin-left: 12px;
+}
+
+.category__list-link {
+    position: relative;
+    display: block;
+    font-size: 2.5rem;
+    color: var(--black-color);
+    text-decoration: none;
+    padding: 12px;  
+    right: 0;
+    transition: right linear 0.1s;  
+}
+
+.category__list-link:hover {
+    right: -8px;
+    color: var(--main-color);
+}
+
+.arrow--right{
+    color: var(--main-color);
+}
+
+.arrow--right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    border: 5px solid;
+    border-color: transparent transparent transparent var(--main-color);
+    transform: translateY(-50%); /* Giảm chiều cao 50% theo trục Y */
+    margin-right: 4px;
+}
+
+
+.products__list {
+    display: none;
+    padding-left: 0;
+    list-style: none;
+    margin: -6px 0 0 12px;
+}
+
+.products__list-item {     
+}
+
+.products__list-link {
+    display: block;
+    color: var(--black-color);
+    padding: 10px;
+    font-size: 2.5rem;  
+    text-decoration: none;
+}
+
+.products__list-link:hover {
+    color: rgba(0, 0, 0, 0.6);
 }
