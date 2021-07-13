@@ -336,7 +336,7 @@
 
             <div class="container">
 
-                <div class="grid-library">
+                <div class="grid-library container__row">
                     <div class="row">
                         <!-- Danh mục 2 cột -->
                         <div class="col p-2">
@@ -344,7 +344,7 @@
                                 <nav class="category">
                                     <div class="category__heading">
                                         <i class="category__heading-icon fas fa-list"></i>
-                                        Danh mục
+                                        <h3>Danh mục</h3>
                                     </div>
 
                                     <ul class="category__list">
@@ -364,7 +364,110 @@
 
                         <!-- Danh sách sản phẩm 10 cột -->
                         <div class="col p-10">
+                            <!-- sort: Sắp xếp, label: nhãn, page: trang, currently: hiện tại, control: điều khiển -->
+                            <div class="sort">
+                                <div class="sort__left">
+                                       <span class="sort-label">Sắp xếp theo</span>
+                                       <button class="sort__btn btn">Phổ biến</button>
+                                       <button class="sort__btn btn btn-color">Mới nhất</button>
+                                       <button class="sort__btn btn">Bán chạy</button>
 
+                                    <div class="sort-price">
+
+                                        <div class="price-label">
+                                            <span class="price-label-content">
+                                                Giá
+                                            </span>
+                                            <i class="price-label-icon fas fa-angle-down"></i>
+                                        </div>
+
+                                        <div class="price-list">
+                                            <ul class="sort-price__list">
+                                                <li class="sort-price__item"><a href="" class="sort-price__link">Giá từ thấp đến cao</a></li>
+                                                <li class="sort-price__item"><a href="" class="sort-price__link">Giá từ cao đến thấp</a></li>
+                                            </ul>
+                                        </div>
+
+                                   </div>
+
+                                </div>
+
+                                <div class="sort__right">
+
+                                    <div class="sort-page">
+                                        <span class="page-number">
+                                            <span class="page-one">1</span>/2
+                                        </span>
+
+                                        <div class="page-control">
+                                            <a href="" class="page-btn page-btn-disabled">
+                                                <i class="page-btn-icon fas fa-angle-left"></i>
+                                            </a>
+                                            
+                                            <a href="" class="page-btn">
+                                                <i class="page-btn-icon fas fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- wrap-products -->
+                            <home class="home__products">
+                                  <div class="row">
+                                      <div class="col p-2">
+                                          <div class="home__products-list">
+                                              <div class="home__products-item">
+                                                  <div class="home__products-img">
+                                                      <img src="./assets/image/agv-pista.png" alt="Mũ bảo hiểm AGV Pista">
+                                                  </div>
+                                                  
+                                                  <div class="products-img-name">
+                                                      <h4 class="products-name-content">
+                                                        PISTA GP RR ECE DOT TOP - SOLELUNA
+                                                      </h4>
+                                                  </div>
+
+                                                  <div class="products__price">
+                                                      <span class="produtcs__price-old">48.800.000đ</span>
+                                                      <span class="products-price-new">36.000.000đ</span>
+                                                  </div>
+
+                                                  <div class="products__active">
+                                                      <div class="active-like">
+                                                        <i class="active-like-heart far fa-heart"></i>
+                                                        <i class="active-like-heart fas fa-heart"></i>
+                                                      </div>
+
+                                                      <div class="active-vote">
+                                                        <i class="active-vote-star fas fa-star"></i>
+                                                        <i class="active-vote-star fas fa-star"></i>
+                                                        <i class="active-vote-star fas fa-star"></i>
+                                                        <i class="active-vote-star fas fa-star"></i>
+                                                        <i class="active-vote-star fas fa-star-half-alt"></i>
+                                                      </div>
+                                                  </div>
+                                                    
+                                                    <div class="products-origin">
+                                                         <div class="products-origin-brand">Dainese</div>
+                                                         <div class="products-origin-national">Italy</div>
+                                                    </div>
+
+                                                    <div class="products-favourite">
+                                                        <i class="products-favourite-check fas fa-check"></i>
+                                                        Yêu thích
+                                                    </div>
+
+                                                    <div class="products-sale">
+                                                       <div class="products-sale-value">30%</div>
+                                                       <div class="products-sale-content">GIẢM</div>
+                                                    </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </home>
                         </div>
                     </div>
                 </div>

@@ -108,7 +108,7 @@ html {
    padding: 0;
    cursor: pointer;
    outline: none;
-   display: flex;
+   display: inline-flex;
    justify-content: center;
    align-items: center;
 }
@@ -126,6 +126,10 @@ html {
 .btn.btn-color {
     color: var(--white-color);
     background-color: var(--main-color);
+}
+
+.btn.btn-color:hover {
+    background-color: rgba(238, 78, 46, 0.9);
 }
 
 .btn.btn-disabled {
