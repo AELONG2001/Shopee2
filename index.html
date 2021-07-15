@@ -144,8 +144,15 @@
                 </nav>
 
                 <!-- Thanh search -->
-                <div class="search">
-                    <div class="search__logo hide-on-mobile-tablet">
+                <div class="search">                 
+                    
+                       <!-- Thanh search trên mobile -->
+                <label for="icon-search" class="search__mobile hide-on-tablet">
+                    <i class="search__mobile-icon fas fa-search"></i>
+                </label>
+                <input type="checkbox" hidden id="icon-search" class="search__mobile-input">
+
+                    <a class="search__logo hide-on-tablet">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
                             <style type="text/css">
@@ -153,7 +160,7 @@
                                 .st1{font-family:'SVN-ArialRegular';}
                                 .st2{font-size:168px;}
                             </style>
-                            <a href="/" class="logo-long">
+                            
                             <g>
                                 <g>
                                     <path class="st0" d="M924,522.3h264.3c17.2-35.8,26.8-76,26.8-118.4c0-151.4-122.7-274.1-274.1-274.1c-5.7,0-11.3,0.2-16.9,0.5
@@ -163,17 +170,17 @@
                                     <path class="st0" d="M924,582.5h-60.2v-60.2V140.8c-113.8,33.3-197,138.5-197,263.1c0,151.4,122.7,274.1,274.1,274.1
                                         c83.2,0,157.7-37.1,208-95.6L924,582.5L924,582.5z"/>
                                 </g>
-                            </g>
-                            <text transform="matrix(1 0 0 1 326.9502 830.0859)" class="st0 st1 st2">longdesigner.com</text>
-                        </a>
+                            </g>                       
+                                <text transform="matrix(1 0 0 1 326.9502 830.0859)" class="st0 st1 st2 hide-on-mobile">longdesigner.com</text>
+                      
                         </svg>
 
-                    </div>
+                    </a>
 
-                    <div class="search__bar">
+                    <div class="search__bar hide-on-mobil">
                             <div class="search__bar-wrap">
                                 <input type="text" class="bar-input" placeholder="Nhập để tìm kiếm sản phẩm...">
-                                <div class="search__bar_history">
+                                <div class="search__bar-history">
                                     <div class="history__heading">
                                         <h3 class="history__heading-text">Lịch sử tìm kiếm</h3>
                                     </div>
@@ -197,11 +204,10 @@
                             </button>
                         </div>
 
-
                 <div class="search__cart">
                     <div class="cart__icon">                          
                             <i class="cart__icon-main fas fa-shopping-cart"></i>  
-                            <span class="cart_amount">5</span>
+                            <span class="cart_amount hide-on-mobile">5</span>
                             
                         <!-- Chưa có sản phẩm thì thêm class "cart__list-no-cart"-->
                         <div class="cart__list cart__list-no-car">
@@ -333,8 +339,29 @@
                 </div>
                 </div>
                     
+                
                 </div>
           </div>
+            <div class="header__sort-bar"></div>
+                <ul class="header__sort-bar-list">
+                    <li class="header__sort-bar-item">
+                        <a href="" class="header__sort-bar-link">Liên quan</a>
+                    </li>
+
+                    <li class="header__sort-bar-item">
+                        <a href="" class="header__sort-bar-link header__sort-bar-link-color">Mới nhất</a>
+                    </li>
+
+                    <li class="header__sort-bar-item">
+                        <a href="" class="header__sort-bar-link">Bán chạy</a>
+                    </li>
+
+                    <li class="header__sort-bar-item">
+                        <a href="" class="header__sort-bar-link">Giá</a>
+                    </li>
+
+                </ul>
+            </div>
         </header>
 
             <div class="container">
@@ -1134,7 +1161,7 @@
 
 
             <footer class="footer">
-                        <div class="grid">
+                        <div class="grid grid-library">
                             <div class="row">
                                 <div class="col p-2-4">
                                     <div class="footer__heading">

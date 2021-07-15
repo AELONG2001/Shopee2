@@ -17,8 +17,11 @@
     z-index: 9999;
   }
  
+  .header__sort-bar-list {
+    display: flex;
+  }
   .container {
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
   }
 
   .search {
@@ -29,13 +32,19 @@
     position: fixed;
     width: 100%;
     max-height: 54vh;
-    top: 62px;
+    top: var(--header-height);
     right: 0;
     padding: 0 55px;
+    margin-top: 0;
   }
 
   .cart__list::before {
     display: none;
+  }
+
+  .cart__item-img-product {
+    width: 64px;
+    height: 64px;
   }
 
   .cart__icon-main {
@@ -46,9 +55,37 @@
     right: 0;     
   }
 
-  .cart__btn {
-    margin: 30px 24px 0 0 ;
+  .cart__heading {
+    font-size: 2.8rem;
   }
+
+  .cart__list-products {
+    margin-top: 16px;
+  }
+
+  .cart__info-name {
+    font-size: 2.4rem;
+  }
+
+
+  .cart__price-main, 
+  .cart__multiply, 
+  .cart__quantity, 
+  .cart__remove  {
+    font-size: 2.6rem;
+    font-weight: 400;
+  } 
+
+  .cart__btn {
+    margin: -10px 24px 0 0px ;
+  }
+
+  .btn.btn-color {
+    width: 200px;
+    height: 42px;
+    font-size: 2.8rem;
+    font-weight: 300;
+  } 
 
  }
 
@@ -73,8 +110,77 @@
 
 
  /* Mobile */ 
- @media (max-width: 63.9375em) {
+ @media (max-width: 46.1875rem) {
     .hide-on-mobile {
       display: none;
   }
+
+  .search {
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dfdf;
+  }
+
+  .search__mobile {
+    display: block;
+  }
+
+  .search__logo {
+    width: 140px;
+    height: 140px;
+    margin-top: 18px;
+  }
+
+.search__mobile-input:checked ~ .search__bar {
+    display: flex;
+}
+  
+  .search__bar {
+    position: fixed;
+    height: 50px;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 6px #ccc;
+    z-index: 1;
+    animation: slideMobile linear 0.6s;
+    display: none;
+  }
+
+/* Animation cho thanh search trên mobile */
+@keyframes slideMobile {
+  from {
+     opacity: 0;
+     top: calc((var(--header-height) / 2));
+  }
+
+  to {
+     opacity: 1;
+     top: var(--header-height);
+  }
+}
+
+.search__bar-history {
+   position: fixed;
+   top: calc((var(--header-height) + var(--header-sort-bar-height)) + 6px);
+   left: 0;
+   width: 100%;
+}
+
+.bar_selection {
+  display: none;
+}
+
+  .search__cart {
+    width: unset;
+  }
+
+  .cart__icon-main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cart__icon {
+    padding-right: 20px;
+  }
+  
  }

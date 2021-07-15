@@ -531,14 +531,24 @@
     margin: 0 -34px 4px;
 }
 
+/* Thanh search trên mobile */
+.search__mobile {
+   padding-left: 20px;
+   display: none;
+}
+
+.search__mobile-icon {
+    font-size: 3.6rem;
+    color: var(--white-color);
+    margin-top: 1px;
+}
+
+
 .search__logo {
    width: 200px;
    display: flex;
    align-items: center;
-}
-
-.logo-long {
-    text-decoration: none !important;
+   text-decoration: none;
 }
 
 .search__logo-img {
@@ -557,7 +567,7 @@
     border-radius: 2px;
 }
 
-.bar-input:focus ~ .search__bar_history {
+.bar-input:focus ~ .search__bar-history {
     display: block;
 }
 
@@ -567,7 +577,7 @@
     height: 100%;
 }
 
-.search__bar_history {
+.search__bar-history {
     z-index: 2;
     position: absolute;
     top: calc(100% + 4px);
@@ -753,8 +763,7 @@
 .cart__icon-main {
     font-size: 3.8rem;
     margin: 12px 24px 0 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 }
 
 /* amount: số lượng */
@@ -874,7 +883,7 @@
 }
 
 .cart___list-item:hover {
-    background-color: #F8F8F8;
+    background-color: #f0f0f0;
 }
 
 .cart__item-img-product {
@@ -961,6 +970,60 @@
 
 .btn-color:hover {
     background-color: rgba(251, 85, 51, 0.96);
+}
+
+/* header-sort-bar for mobile and tablet */
+.header__sort-bar-list {
+    position: fixed;
+    list-style: none;
+    top: var(--header-height);
+    right: 0;
+    left: 0;
+    height: var(--header-sort-bar-height);
+    background-color: var(--white-color);
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #e0dfdf;
+    border-bottom: 1px solid #e0dfdf;
+    display: flex;
+    display: none;
+}
+
+.header__sort-bar-item {
+   flex: 1;
+}
+
+.header__sort-bar-item:first-child .header__sort-bar-link::before {
+    display: none;
+}
+
+.header__sort-bar-link {
+   position: relative;
+   font-size: 2.4rem;
+   color: var(--text-color);
+   display: block;
+   line-height: var(--header-sort-bar-height);
+   text-decoration: none;
+   text-align: center;
+}
+
+.header__sort-bar-link:hover {
+    background-color: #f0f0f0;
+}
+
+.header__sort-bar-link::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    top: 50%;
+    left: 0;
+    border-left: 1px solid #e0dfdf;
+    transform: translateY(-50%);
+}
+
+
+.header__sort-bar-link-color {
+    color: var(--main-color);
 }
 
 /* container */
