@@ -119,6 +119,8 @@
     background-color: #f0f0f0;
 }
 
+
+
 .list__item-access {
     display: flex;
     align-items: center;
@@ -192,9 +194,11 @@
    position: absolute;
    display: none;
    margin-top: 21px;
-   animation: fadeIn ease 0.8s;
-   box-shadow: 0 1px 6px #ccc;
    z-index: 3;
+}
+
+.qr-img {
+    position: relative;
 }
 
 .header_qr::before {
@@ -210,21 +214,21 @@
     display: none;
 }
 
-.qr_img {
-}
 
 .qr_app {
+   position: absolute;
    display: flex;
    justify-content: space-between;
+   background-color: var(--white-color);
 }
 
 .qr_img-app {
-    
+    padding: 0 4.3px;
+  
 }
 
 .qr_img-app--download {
-    height: 19px;
-    margin: 0 -2px;
+    height: 21px;
 }
 
 /* Thanh thông báo(notification) */
@@ -564,7 +568,7 @@
 }
 
 .search__bar_history {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: calc(100% + 4px);
     left: 0;
@@ -1075,6 +1079,15 @@
     width: 50px;
     height: 30px;
     background-color: var(--white-color);
+}
+
+.products__list-link-bottom-after::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    height: 24px;
+    width: 190px;
 }
 
 .products__list-link:hover {
