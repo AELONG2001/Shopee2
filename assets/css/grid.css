@@ -157,16 +157,9 @@
 /* Tablet 740px -> 1023px*/
 @media  (min-width: 46.25em) and (max-width: 63.9375em) {
    .wide-t{
-       max-width: 644px;
+       width: 644px;
    }
 }
-
-/* Mobile từ 740px trở xuống*/
-@media (max-width: 46.25em) {
-    .wide-m{
-        max-width: 400px;
-    }
- }
 
 /* >Table Từ 740px trở lên*/
 @media (min-width: 46.25em) and (max-width: 63.9375em) {

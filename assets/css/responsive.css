@@ -89,6 +89,10 @@
     font-weight: 300;
   } 
 
+.row__container {
+  margin: 0;
+}
+  
   .products-content {
     height: unset;
   }
@@ -203,6 +207,43 @@
     line-height: 1.9rem;
     top: -7px;
     right: 12px;
-  }
+  } 
+ 
+  .products-img-name, .products-img-name, .products__price-old, .products-price-new, .products-origin 
+  {
+   font-size: 2.2rem;
+ }
   
+ }
+
+ /* Mobile màn hình nhỏ < 380px */
+ @media (max-width: 23.75em) {
+  .products-img-name, .products-img-name, .products__price-old, .products-price-new, .products-origin 
+  {
+   font-size: 1.9rem;
+ }
+
+ i.active-like-heart-full {
+   font-size: 1.3rem;
+ }
+
+ .active-vote-star {
+   font-size: 1rem;
+ }
+ }
+
+ /* Mobile màn hình nhỏ < 330px */
+ @media (max-width: 20.625em) {
+  .products-img-name, .products-img-name, .products__price-old, .products-price-new, .products-origin 
+  {
+   font-size: 1.6rem;
+ }
+
+ i.active-like-heart-full {
+   font-size: 1.3rem;
+ }
+
+ .active-vote-star {
+   font-size: 1rem;
+ }
  }
