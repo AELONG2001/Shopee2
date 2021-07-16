@@ -187,7 +187,8 @@
     .t8,
     .t9,
     .t10,
-    .t11{
+    .t11,
+    .t12 {
         display: block;
     }
     
@@ -352,7 +353,8 @@
     .p8,
     .p9,
     .p10,
-    .p11{
+    .p11,
+    .p12 {
         display: block;
     }
 
@@ -480,168 +482,169 @@
 }
 
 
-/* PC có độ phân giải từ 1024px -1239px */
+/* PC có độ phân giải từ 1024px > 1239px */
 @media (min-width: 64em) and (max-width: 77.4375em) {
-    .wide-ipad-pro{
-        width: 984px;
+    .wide-tablet-pro{
+        width: 954px;
     }
-    .wide .row{
+    .wide-row{
         margin-left: -6px;
         margin-right: -6px;
     }
   
     /* Bỏ khoảng cách gutters cho row */
-    .wide .no-gutters{
-        margin-left: -5px;
-        margin-right: -5px;
+    .wide-no-gutters{
+        margin-left: -6px;
+        margin-right: -6px;
      }
 
-    .wide .col{
+    .wide-col{
         padding-left: 6px;
         padding-right: 6px;
     }
 
 
     /* Bỏ khoảng cách gutters cho col */
-    .wide .no-gutters .col{
-       padding-left: 5px;
-       padding-right: 5px;
+    .wide-no-gutters .col{
+       padding-left: 6px;
+       padding-right: 6px;
      } 
 
 
     /* Colum for PC có độ phân giải thấp */
-    .wide .p-0{
+    .wide-p-0{
         display: none;
     }
     
     
-    .wide .p1,
-    .wide .p2,
-    .wide .p3,
-    .wide .p4,
-    .wide .p5,
-    .wide .p6,
-    .wide .p7,
-    .wide .p8,
-    .wide .p9,
-    .wide .p10,
-    .wide .p11{
+    .wide-p1,
+    .wide-p2,
+    .wide-p3,
+    .wide-p4,
+    .wide-p5,
+    .wide-p6,
+    .wide-p7,
+    .wide-p8,
+    .wide-p9,
+    .wide-p10,
+    .wide-p11
+    .wide-p12 {
         display: block;
     }
 
 
-    .wide .p-1{
+    .wide-p-1{
         flex: 0 0 8.33333%;
         width: 8.33333%;
     }
     
-    .wide .p-2{
+    .wide-p-2{
         flex: 0 0 16.66667%;
         width: 16.66667%;
     }
     
-    .wide .p-3{
+    .wide-p-3{
         flex: 0 0 25%;
         width: 25%;
     }
     
-    .wide .p-4{
+    .wide-p-4{
         flex: 0 0 33.33333%;
         width: 33.33333%;
     }
     
-    .wide .p-5{
+    .wide-p-5{
         flex: 0 0 41.66667%;
         width: 41.66667%;
     }
     
-    .wide .p-6{
+    .wide-p-6{
         flex: 0 0 50%;
         width: 50%;
     }
     
-    .wide .p-7{
+    .wide-p-7{
         flex: 0 0 58.33333%;
         width: 58.33333%;
     }
     
-    .wide .p-8{
+    .wide-p-8{
         flex: 0 0 66.66667% ;
         width: 66.66667%;
     }
     
-    .wide .p-9{
+    .wide-p-9{
         flex: 0 0 75%;
         width: 75%;
     }
     
-    .wide .p-10{
+    .wide-p-10{
         flex: 0 0 83.33333%;
         width: 83.33333%;
     }
     
-    .wide .p-11{
+    .wide-p-11{
         flex: 0 0 91.66667%;
         width: 91.66667%;
     }
     
-    .wide .p-12{
+    .wide-p-12{
         flex: 0 0 100%;
         width: 100%;
     }
 
   /* Margin offset để đẩy phần tử */
- .wide .p-o-1 {
+ .wide-p-o-1 {
     margin-left: 8.33333%;
   }
 
 
- .wide .p-o-2 {
+ .wide-p-o-2 {
     margin-left: 16.66667%;
   }
 
 
- .wide .p-o-3 {
+ .wide-p-o-3 {
     margin-left: 25%;
   }
 
 
- .wide .p-o-4 {
+ .wide-p-o-4 {
     margin-left: 33.33333%;
   }
 
 
- .wide .p-o-5 {
+ .wide-p-o-5 {
     margin-left: 41.66667%;
   }
 
 
- .wide .p-o-6 {
+ .wide-p-o-6 {
     margin-left: 50%;
   }
 
 
- .wide .p-o-7 {
+ .wide-p-o-7 {
     margin-left: 58.33333%;
   }
 
 
- .wide .p-o-8 {
+ .wide-p-o-8 {
     margin-left: 66.66667%;
   }
 
 
- .wide .p-o-9 {
+ .wide-p-o-9 {
     margin-left: 75%;
   }
 
 
- .wide .p-o-10{
+ .wide-p-o-10{
     margin-left: 83.33333%;
   }
 
 
- .wide .p-o-11{
+ .wide-p-o-11{
     margin-left: 91.66667%;
   }
 }

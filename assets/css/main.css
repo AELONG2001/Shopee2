@@ -250,7 +250,7 @@
     -moz-animation: showHide ease-in 0.2s;  /* Hỗ trợ trình duyệt Firefox*/
     will-change: opacity transform; /* cho trình duyệt biết trước sự thay đổi */
     display: none;
-    z-index: 2;
+    z-index: 99999;
     border-radius: 2px;
 }
 
@@ -1652,6 +1652,7 @@ i.active-like-heart-full {
 .footer__download-app-link {
     color: transparent;
     text-decoration: none;
+    padding: 2px 4px;
 }
 
 .footer__apps_download-app {

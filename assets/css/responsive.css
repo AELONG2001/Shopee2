@@ -1,3 +1,4 @@
+
 /* Mobile and Tablet */
  @media (max-width: 63.9375em) {
   :root {
@@ -9,6 +10,10 @@
     display: none;
   }
     
+.main {
+  overflow: hidden;
+}
+
 
   .header {
     position: fixed;
@@ -25,7 +30,6 @@
 
   .container {
     margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
-    overflow: hidden;
   }
 
   .search {
@@ -126,7 +130,57 @@
   .container__row {
     padding: 0;
   }
+
+  .pagination-page {
+    padding-left: 0;
+  }
+
+  .footer-content {
+    margin: 0 -28px;
+  }
+
+  .footer__heading-content {
+    text-align: center;
+  }
+
+  .footer__link {
+    justify-content: center;
+  }
+
+  .footer__heading {
+    margin-top: 90px;
+  }
+    
+  .footer__logo-fix-tablet {
+    margin: -26px 32%;
+  }
+
+  .footer__qr-code {
+    margin-left: 56%;
+    margin-top: -166px;
+  }
+
+
+  .footer__logo {
+    width: 300px;
+    height: 100px;
+  }
   
+  .footer__link-icon {
+    margin-right: 10px;
+  }
+
+  .footer__fix-tablet-space-y {
+    margin-right: 9px;
+  }
+  
+  .footer__fix-tablet-space-g {
+    margin-right: 20px;
+  }
+
+  .footer__download-app-link {
+    padding: 8px 14px;
+  }
  }
 
 
@@ -262,3 +316,54 @@
    font-size: 1rem;
  }
  }
+
+
+ /* PC có độ phân giải từ 1024px > 1239px */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+  .hide-on-pc-low {
+    display: none;
+  }
+
+  .show-on-pc-low {
+    display: block;
+  }
+
+  .search__logo {
+    display: block;
+  }
+
+  .search__bar-history {
+    width: 100%;
+  }
+
+  .row__container {
+    padding-top: 24px;
+    margin: 0;
+  }
+
+  .home__products-container {
+    margin-top: 20px;
+  }
+
+  .products-content {
+    height: unset;
+  }
+
+  .products-img-name, .products-origin {
+   font-size: 2.2rem;
+
+ }
+
+ .products__price-old {
+   font-size: 2.6rem;
+ }
+
+ .products-price-new {
+   font-size: 2.8rem;
+ }
+
+
+.footer__heading-content, .footer__apps-heading-content {
+   line-height: 2.8rem;
+ }
+}
