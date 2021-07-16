@@ -1,3 +1,6 @@
+.main {
+    overflow: hidden;
+}
 
 .header{
     height: var(--header-height);
@@ -1314,6 +1317,55 @@
 
 .page-btn:last-child:hover {
     color: rgba(0, 0, 0, 0.6);
+}
+
+/* Category for mobile */
+
+.mobile__category-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile__category-list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile__category-item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile__category-link {
+    --line-height: 40px;
+    width: 110px;
+    height: var(--line-height);
+    line-height: var( --line-height);
+    display: block;
+    font-size: 2rem;
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.mobile__category-item:nth-of-type(3n+ 1) .mobile__category-link {
+    background-color: yellow;
+}
+
+.mobile__category-item:nth-of-type(3n + 2) .mobile__category-link {
+    background-color: blue;
+}
+
+.mobile__category-item:nth-of-type(3n + 3) .mobile__category-link {
+    background-color: green;
 }
 
 /* wrap products */
