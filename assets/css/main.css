@@ -1,6 +1,3 @@
-.main {
-    overflow: hidden;
-}
 
 .header{
     height: var(--header-height);
@@ -1033,7 +1030,6 @@
 /* container */
 .container {
     background-color: #F5F5F5;
-    overflow: hidden;
 }
 
 .container__row {
@@ -1529,7 +1525,7 @@ i.active-like-heart-full {
 
 /* pagination: phân trang */
 .pagination-page {
-    margin: 168px auto 40px;
+    margin: 50px auto 40px;
 }
 
 

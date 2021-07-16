@@ -9,6 +9,7 @@
     display: none;
   }
     
+
   .header {
     position: fixed;
     top: 0;
@@ -24,6 +25,7 @@
 
   .container {
     margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    overflow-x: hidden;
   }
 
   .search {
@@ -209,11 +211,24 @@
     right: 12px;
   } 
  
-  .products-img-name, .products-img-name, .products__price-old, .products-price-new, .products-origin 
+ .products-img-name, .products__price-old, .products-price-new, .products-origin 
   {
    font-size: 2.2rem;
  }
   
+ .pagination-page {
+   padding-left: 0;
+ }
+
+ .pagination__list {
+   padding: 0;
+ }
+ 
+ .pagination__link {
+   font-size: 2.4rem;
+   font-weight: 400;
+ }
+
  }
 
  /* Mobile màn hình nhỏ < 380px */
