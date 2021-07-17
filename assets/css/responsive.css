@@ -10,6 +10,10 @@
   .hide-on-mobile-tablet {
     display: none;
   }
+
+  .show-on-mobile-tablet {
+    display: block;
+  }
     
  .main {
     overflow: hidden;
