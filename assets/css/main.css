@@ -1606,6 +1606,10 @@ i.active-like-heart-full {
     align-items: center;
 } 
 
+.footer__link-pc {
+    margin-left: 50px;
+}
+
 .footer__link:hover {
     color: var(--main-color);
 }
@@ -1613,8 +1617,16 @@ i.active-like-heart-full {
 .footer__link-icon {
     color: #737373;
     font-size: 2.8rem;
-    margin-right: 6px;
+    margin-right: 10px;
 } 
+
+.footer__link-icon-fix-pc {
+    margin-left: -1px;
+}
+
+.footer__fix-pc-space-y {
+    margin-left: -1px;
+}
 
 .footer__link-icon:hover {
     color: rgba(115, 115, 115, 0.8)
