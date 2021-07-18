@@ -807,7 +807,7 @@
     display: block;
 }
 
-/* Không sản thẩm thì thêm class "cart__list-no-cart */
+/* Không sản phẩm thì thêm class "cart__list-no-cart */
 .cart__list-no-cart {
     width: 350px !important;
     height: 260px;
@@ -892,7 +892,7 @@
 }
 
 .cart__list-products {
-   max-height: 62vh; /* vh viewport height là tỉ lệ theo chiều cao màn hình */
+   height: 62vh; /* vh viewport height là tỉ lệ theo chiều cao màn hình */
    color: var(--black-color);
    list-style: none;
    padding-left: 0;
