@@ -226,6 +226,7 @@
 
   .search__mobile {
     display: block;
+    margin-right: 20px;
   }
 
   .search__logo {
@@ -288,10 +289,10 @@
  }
 
  .cart_amount {
-   font-size: 1.9rem;
-   line-height: 1.9rem ;
-   top: -8px;
-   right: 29px;
+   font-size: 1.6rem;
+   line-height: 1.6rem ;
+   top: -5px;
+   right: 31px;
  } 
 
  .products-img-name, .products__price-old, .products-price-new, .products-origin 
