@@ -21,7 +21,7 @@
 }
 
 /* Bỏ khoảng cách gutters cho row */
-.no-gutters{
+.row.no-gutters{
     margin-left: 0;
     margin-right: 0;
 }
@@ -320,7 +320,7 @@
     }
 
     /* Bỏ khoảng cách gutters cho row */
-    .no-gutters{
+    .row.no-gutters{
        margin-left: -5px;
        margin-right: -5px;
     }
@@ -485,7 +485,7 @@
 /* PC có độ phân giải từ 1024px > 1239px */
 @media (min-width: 64em) and (max-width: 77.4375em) {
     .wide-tablet-pro{
-        width: 954px;
+        width: 984px;
     }
     .wide-row{
         margin-left: -6px;
@@ -493,9 +493,9 @@
     }
   
     /* Bỏ khoảng cách gutters cho row */
-    .wide-no-gutters{
-        margin-left: -6px;
-        margin-right: -6px;
+    .wide-no-gutters-row{
+        margin-left: 0;
+        margin-right: 0;
      }
 
     .wide-col{
@@ -505,9 +505,9 @@
 
 
     /* Bỏ khoảng cách gutters cho col */
-    .wide-no-gutters .col{
-       padding-left: 6px;
-       padding-right: 6px;
+    .wide-no-gutters-col{
+       padding-left: 0;
+       padding-right: 0;
      } 
 
 
