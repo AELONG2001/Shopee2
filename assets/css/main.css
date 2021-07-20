@@ -803,11 +803,10 @@
     background-color: var(--white-color);
     border-radius: 50%;
     border: 2px solid #EE4D2D;
+    user-select: none;
 }
 
-.cart__icon:hover .cart__list {
-    display: block;
-}
+
 
 /* Không sản phẩm thì thêm class "cart__list-no-cart */
 .cart__list-no-cart {
@@ -845,6 +844,10 @@
     display: none;
     cursor: default;
     animation: fadeIn ease-in 0.2s;
+}
+
+.cart__check-main:checked ~ .cart__list {
+    display: block;
 }
 
 .cart__list::before {
@@ -1595,7 +1598,7 @@
     color: var(--main-color);
     font-size: 2.7rem;
     font-weight: 500;
-    margin: -17px 15px 16px 44px;
+    margin: 0 auto;
 }
 
 .products__active {
