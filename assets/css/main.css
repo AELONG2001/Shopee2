@@ -1532,6 +1532,7 @@
 
 .home__products-list {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 } 
 
 .home__products-item {

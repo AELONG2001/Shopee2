@@ -129,7 +129,7 @@
 
 
  /* Tablet */
- @media (min-width: 46.25em) and (max-width: 64em) {
+ @media (min-width: 46.25em) and (max-width: 63.9875em) {
 
   .hide-on-tablet {
     display: none;
@@ -462,8 +462,8 @@
 
  }
 
-/* Mobile màn hình lớn */
-@media (min-width: 30em) and (max-width: 46.1875em)  {
+/* Mobile màn hình lớn từ 512px > 739px */
+@media (min-width: 32em) and (max-width: 46.1875em)  {
 
   .cart__list {
     max-height: 72vh;
