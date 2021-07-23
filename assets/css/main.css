@@ -983,6 +983,7 @@
 .cart__remove {
     color: var(--text-color);
     font-size: 2.4rem;
+    user-select: none;
 }
 
 .cart__remove:hover {
@@ -994,6 +995,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 26px 12px 0 0;
+    user-select: none;
 }
 
 .btn-color:hover {
