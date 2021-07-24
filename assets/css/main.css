@@ -1702,6 +1702,60 @@ i.active-like-heart-full {
     padding: 0 3px 0 5px;
 }
 
+/* Outstanding : Nổi bật */
+.products-outstanding {
+    position: absolute;
+    width: 112px;
+    height: 80px;
+    top: -5px;
+    left: -5px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.products-outstanding::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 31px;
+    border: 10px solid var(--main-color);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    filter: brightness(60%);
+    z-index: -1;
+}
+
+.products-outstanding::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    border: 10px solid var(--main-color);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    filter: brightness(60%);
+    z-index: -1;
+}
+
+.products-outstanding-label {
+   position: absolute;
+   font-size: 2rem;
+   font-weight: 500;
+   width: 160px;
+   top: 16px;
+   right: -8px;
+   display: block;
+   padding: 6px 0px;
+   text-align: center;
+   color: var(--white-color);
+   background-color: var(--main-color);
+   transform: rotate(-45deg);
+}
+
+.products-outstanding-label span {
+   margin-right: 16px;
+}
+
 .products-sale {
     position: absolute;
     width: 40px;
