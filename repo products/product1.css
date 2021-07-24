@@ -195,6 +195,10 @@
    border-radius: 2px;
 }
 
+.motor {
+    min-width: 120px;
+}
+
 .product1__size-main:hover {
     color: var(--main-color);
     border: 1px solid var(--main-color);
