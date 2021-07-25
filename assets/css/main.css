@@ -1748,7 +1748,7 @@ i.active-like-heart-full {
     content: "";
     position: absolute;
     top: -1px;
-    right: 31px;
+    right: 30px;
     border: 10px solid var(--main-color);
     border-top-color: transparent;
     border-left-color: transparent;
