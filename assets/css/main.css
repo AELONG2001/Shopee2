@@ -1120,10 +1120,11 @@
 }
 
 .header__sort-bar-item {
+   position: relative;
    flex: 1;
 }
 
-.header__sort-bar-item:first-child .header__sort-bar-link::before {
+.header__sort-bar-item:nth-child(2) .header__sort-bar-link::before {
     display: none;
 }
 
@@ -1135,22 +1136,44 @@
    line-height: var(--header-sort-bar-height);
    text-decoration: none;
    text-align: center;
+   overflow: hidden;
 }
 
-.header__sort-bar-link:hover {
-    background-color: rgb(252, 247, 247);
-}
 
 .header__sort-bar-link::before {
     content: "";
     position: absolute;
     height: 80%;
-    top: 50%;
+    top: 10%;
     left: 0;
     border-left: 1px solid #e0dfdf;
-    transform: translateY(-50%);
 }
 
+
+.header__sort-bar-item-test-1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    transform: translateX(0%);
+}
+
+.check-1-mobile-main:checked ~ .header__sort-bar-item-test-1::after{
+    transform: translateX(100%);  
+}
+
+
+
+
+.check-1-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 .header__sort-bar-link-color {
     color: var(--main-color);
@@ -1158,7 +1181,7 @@
 
 /* Mũi tên trỏ lên và trỏ xuống */
 .sort-bar-arrow-up-down {
-    margin: -42px 0 0 42px;
+    margin: -42px 0 -4px 42px;
 }
 
 .sort-bar-arrow-up {
