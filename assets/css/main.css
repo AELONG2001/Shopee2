@@ -1150,7 +1150,7 @@
 }
 
 
-.header__sort-bar-item-test-1::after{
+.header__sort-bar-item-move::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -1162,15 +1162,17 @@
     transform: translateX(0%);
 }
 
-.check-1-mobile-main:checked ~ .header__sort-bar-item-test-1::after{
+
+/* Để làm điều này nhớ đặt thêm class vào thẻ li (không dùng first-child) */
+.check-1-mobile-main:checked ~ .header__sort-bar-item-move::after{
     transform: translateX(100%);  
 }
 
-.check-2-mobile-main:checked ~ .header__sort-bar-item-test-1::after{
+.check-2-mobile-main:checked ~ .header__sort-bar-item-move::after{
     transform: translateX(200%);  
 }
 
-.check-3-mobile-main:checked ~ .header__sort-bar-item-test-1::after{
+.check-3-mobile-main:checked ~ .header__sort-bar-item-move::after{
     transform: translateX(300%);  
 }
 
