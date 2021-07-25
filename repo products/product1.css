@@ -273,6 +273,7 @@
     background-color: rgba(255,87,34,0.1);
     border: 1px solid var(--main-color);
     border-radius: 2px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .product1-btn-cart:hover {
