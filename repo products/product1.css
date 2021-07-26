@@ -1,3 +1,34 @@
+/* Header */
+.header__sort-bar-item-move::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    transform: translateX(100%);
+}
+
+
+/* Để làm điều này nhớ đặt thêm class vào thẻ li (không dùng first-child) */
+.check-0-mobile-main:checked ~ .header__sort-bar-item-move::after{
+    transform: translateX(0%);  
+}
+
+.check-1-mobile-main:checked ~ .header__sort-bar-item-move::after{
+    transform: translateX(100%);  
+}
+
+.check-2-mobile-main:checked ~ .header__sort-bar-item-move::after{
+    transform: translateX(200%);  
+}
+
+.check-3-mobile-main:checked ~ .header__sort-bar-item-move::after{
+    transform: translateX(300%);  
+}
+
 .app-products {
     overflow: hidden;
 }
