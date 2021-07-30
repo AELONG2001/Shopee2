@@ -136,6 +136,7 @@
         font-weight: 500;
         margin: 0;
         border-radius: 0;
+        padding-right: 16px;
     }
 
     .container__main {
@@ -188,10 +189,6 @@
     .btn.btn-color {
         font-size: 2rem;
         line-height: 2rem;
-    }
-
-    .btn.btn.product1-btn-buy {
-        padding-right: 16px;
     }
 
     .product1-btn-cart-main {
