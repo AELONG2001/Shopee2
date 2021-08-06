@@ -1,4 +1,6 @@
-
+.main {
+    overflow: hidden;
+}
 .header{
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6232, 
