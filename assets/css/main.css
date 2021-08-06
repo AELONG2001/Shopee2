@@ -1885,9 +1885,9 @@ i.active-like-heart-full {
     color: rgba(115, 115, 115, 0.8)
 }
 
-.footer__logo {
-
-} 
+.logo_footer-page {
+    text-decoration: none;
+}
 
 .footer__apps-heading-content {
    font-size: 2.6rem;
