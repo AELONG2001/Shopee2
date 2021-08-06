@@ -226,3 +226,12 @@
     
  }
 
+
+ 
+ /* PC có độ phân giải từ 1024px > 1239px */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+   
+    .container__main {
+        padding-top: 150px;
+    }
+}

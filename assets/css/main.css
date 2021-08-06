@@ -1,6 +1,8 @@
+
 .main {
     overflow: hidden;
 }
+
 .header{
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6232, 
@@ -68,8 +70,8 @@
 
 
 .info-user {
+   z-index: 4;
    display: none;
-   z-index: 1;
    width: 166px;
    position: absolute;
    list-style: none;
@@ -834,7 +836,7 @@
 }
 
 .cart__list {
-    z-index: 2;
+    z-index: 3;
     width: 420px;
     height: 78vh;
     margin-top: 4px;
@@ -1895,7 +1897,6 @@ i.active-like-heart-full {
    font-size: 2.6rem;
    color: var(--text-color);
    font-weight: 500;
-   margin-left: 7px;
 } 
 
 
