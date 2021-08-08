@@ -338,6 +338,7 @@
 
  .search__cart {
    width: unset;
+   margin-top: 4px;
  }
 
  .cart__icon-main {
