@@ -778,6 +778,7 @@
     justify-content: center;
     align-items: center;
     -webkit-tap-highlight-color: transparent;
+    margin-bottom: 12px;
 }
 
 
@@ -1601,7 +1602,7 @@
 .products-img-name {
    color: var(--black-color);
    font-size: 2rem;
-   font-weight: 500;
+   font-weight: 400;
    min-height: 7.4rem;
    line-height: 2.7rem;
    margin: 10px;
