@@ -65,8 +65,7 @@ html {
 /* Modal  */
 
 .modal {
-   display: none !important;
-   display: flex;
+   display: none;
    position: fixed;
    top: 0;
    right: 0;
@@ -116,12 +115,21 @@ html {
 }
 
 
-.btn.btn-back {
+.btn.btn-back-register {
     margin-right: 8px;
     background-color: var(--white-color);
 }
 
-.btn.btn-back:hover {
+.btn.btn-back-register:hover {
+    background-color: #f0f0f0;
+}
+
+.btn.btn-back-login {
+    margin-right: 8px;
+    background-color: var(--white-color);
+}
+
+.btn.btn-back-login:hover {
     background-color: #f0f0f0;
 }
 

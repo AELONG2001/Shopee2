@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap">
+        <script  src="./assets/main.js"></script>
     </head>
  <body>  
   
@@ -126,10 +127,10 @@
   
                           </li>
                           <li class="list__item"><a href="" class="list__link"><i class="icon-help far fa-question-circle"></i>Trợ giúp</a></li>
-                          <!-- <li class="list__item list__item-click"><a href="" class="list__link list__link-strong list__link--space">Đăng ký</a></li>
-                          <li class="list__item list__item-click"><a href="" class="list__link list__link-strong">Đăng nhập</a></li> -->
+                          <li class="list__item list__item-click"><a href="" id="register" class="list__link list__link-strong list__link--space">Đăng ký</a></li>
+                          <li class="list__item list__item-click"><a href="" id="login" class="list__link list__link-strong">Đăng nhập</a></li>
                           <li class="list__item-user">
-                              <div class="user-login">
+                              <div class="user-login p-0">
                                   <img src="./assets/image/AELONG.png" alt="" class="list__item-user-img">
                                   <span class="list__item-user-name list__li">Long Nguyễn</span>
                               </div>
@@ -195,7 +196,7 @@
 
                         </a>
 
-                        <input type="checkbox" hidden id="icon-search" class="search__mobile-input">                             
+                      <input type="checkbox" hidden id="icon-search" class="search__mobile-input">                             
                       <div class="search__bar">
                               <div class="search__bar-wrap">
                                   <input type="text" class="bar-input" placeholder="Nhập để tìm kiếm sản phẩm...">
@@ -271,8 +272,7 @@
                               <span class="cart_amount">5</span>
                               
                           <!-- Chưa có sản phẩm thì thêm class "cart__list-no-cart"-->
-                          <input type="checkbox" hidden id="cart__check" class="cart__check-main">
-                          <div class="cart__list cart__list-no-car">
+                          <div class="cart__list cart__list-no-cart">
                               <div class="no-cart">
                                   <img src="./assets/image/cart.png" alt="" class="cart__list-img">
                                   <span class="no-cart-description">
@@ -1662,39 +1662,39 @@
                     <div class="modal__body">
                     <!-- Form đăng kí -->
                     <div class="form-register">
-                    <div class="form__container">
-                    <div class="form__header">
-                        <h3 class="header-register">Đăng ký</h3>
-                        <span class="header-login">Đăng nhập</span>
-                    </div>
-
-                    <div class="form__main">
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Nhập Email của bạn tại đây">
+                        <div class="form__container">
+                        <div class="form__header">
+                            <h3 class="header-register-r">Đăng ký</h3>
+                            <span class="header-login-r">Đăng nhập</span>
                         </div>
 
-                        <div class="form__group">
-                            <input type="password" class="form__input" placeholder="Nhập mật khẩu của bạn tại đây">
+                        <div class="form__main">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Nhập Email của bạn tại đây">
+                            </div>
+
+                            <div class="form__group">
+                                <input type="password" class="form__input" placeholder="Nhập mật khẩu của bạn tại đây">
+                            </div>
+
+                            <div class="form__group">
+                                <input type="password" class="form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
                         </div>
 
-                        <div class="form__group">
-                            <input type="password" class="form__input" placeholder="Nhập lại mật khẩu của bạn">
+                        <div class="form__note">
+                            <p class="note__content">
+                                Bằng việc đăng kí, bạn đã đồng ý với AE Shop về
+                                <a href="" class="note__link">Điều khoản dịch vụ</a>
+                                & 
+                                <a href="" class="note__link">Chính sách bảo mật</a>
+                            </p>
                         </div>
-                    </div>
 
-                    <div class="form__note">
-                        <p class="note__content">
-                            Bằng việc đăng kí, bạn đã đồng ý với AE Shop về
-                            <a href="" class="note__link">Điều khoản dịch vụ</a>
-                            & 
-                            <a href="" class="note__link">Chính sách bảo mật</a>
-                        </p>
-                    </div>
-
-                    <div class="form__buttons">
-                        <button class="btn btn-back">Trở lại >></button>
-                        <button class="btn btn-color">Đăng ký</button>
-                    </div>
+                        <div class="form__buttons">
+                            <button class="btn btn-back-register">Trở lại >></button>
+                            <button class="btn btn-color">Đăng ký</button>
+                        </div>
 
                     </div>
 
@@ -1714,8 +1714,8 @@
                     <div class="form-login">
                         <div class="form__container">
                             <div class="form__header">
-                                <h3 class="header-register">Đăng nhập</h3>
-                                <span class="header-login">Đăng ký</span>
+                                <h3 class="header-login-l">Đăng nhập</h3>
+                                <span class="header-register-l">Đăng ký</span>
                             </div>
 
                             <div class="form__main">
@@ -1736,7 +1736,7 @@
                             </div>
 
                             <div class="form__buttons">
-                                <button class="btn btn-back">Trở lại >></button>
+                                <button class="btn btn-back-login">Trở lại >></button>
                                 <button class="btn btn-color">Đăng nhập</button>
                             </div>
 
@@ -1758,7 +1758,5 @@
                     </div>         
 
                     </div>
-
-
 </body>
 </html>
