@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="responsive-pr1.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap">
-    <script src="./product.js"></script>
+    <script src="../assets/main.js"></script>
 </head>
 <body>
     <div class="header-main">
@@ -67,7 +67,7 @@
                               <ul class="notification__list">
                                   <li class="notification__item">
                                       <a href="" class="notification__link">
-                                          <img src="./assets/image/agv-pista.png" alt="Mũ bảo hiểm AGV Pista" class="notification__img">
+                                          <img src="../assets/image/agv-pista.png" alt="Mũ bảo hiểm AGV Pista" class="notification__img">
                                           <div class="info-img">
                                               <span class="notification__product">PISTA GP RR ECE DOT TOP SOLELUNA</span>
                                               <span class="notification__description">Mũ bảo hiểm AGV Pista, Một sản phẩm dành cho biker đang rất được ưa chuộng trên toàn thế giới.</span>
@@ -77,7 +77,7 @@
   
                                   <li class="notification__item">
                                       <a href="" class="notification__link">
-                                          <img src="./assets/image/jackets-dainese.png" alt="Áo giáp Dainese" class="notification__img">
+                                          <img src="../assets/image/jackets-dainese.png" alt="Áo giáp Dainese" class="notification__img">
                                           <div class="info-img">
                                               <span class="notification__product">SUPER SPEED 3 LEATHER JACKET</span>
                                               <span class="notification__description">Supper speed 3 leather mang đến cho bạn một trải nghiệm tuyệt vời khi chạy trên đường phố. </span>
@@ -87,7 +87,7 @@
   
                                       <li class="notification__item">
                                       <a href="" class="notification__link">
-                                          <img src="./assets/image/pants-dainese.png" alt="Quần giáp Dainese" class="notification__img">
+                                          <img src="../assets/image/pants-dainese.png" alt="Quần giáp Dainese" class="notification__img">
                                           <div class="info-img">
                                               <span class="notification__product">DELTA 3 LEATHER PANTS</span>
                                               <span class="notification__description">Quần thể thao hoàn toàn mới được thiết kế để tạo sự thoải mái nhanh nhẹn với thanh trượt đầu gối .</span>
@@ -97,7 +97,7 @@
   
                                   <li class="notification__item">
                                       <a href="" class="notification__link">
-                                          <img src="./assets/image/gloves-dainese.png" alt="Găng tay Dainese" class="notification__img">
+                                          <img src="../assets/image/gloves-dainese.png" alt="Găng tay Dainese" class="notification__img">
                                           <div class="info-img">
                                               <span class="notification__product">FULL METAL 6 GLOVES</span>
                                               <span class="notification__description">Full metal 6 gloves.Đây chính là cách tốt nhất bảo vệ đôi tay của mình. </span>
@@ -107,7 +107,7 @@
   
                                   <li class="notification__item">
                                   <a href="" class="notification__link">
-                                      <img src="./assets/image/boots-dainese.png" alt="Giầy ống Dainese" class="notification__img">
+                                      <img src="../assets/image/boots-dainese.png" alt="Giầy ống Dainese" class="notification__img">
                                       <div class="info-img">
                                           <span class="notification__product">TORQUE 3 OUT BOOTS</span>
                                           <span class="notification__description">Torque 3 out boots là mẫu giày hoàn hảo để bảo vệ đôi chân của bạn trên mọi chặng đường. </span>
@@ -125,10 +125,10 @@
   
                           </li>
                           <li class="list__item"><a href="" class="list__link"><i class="icon-help far fa-question-circle"></i>Trợ giúp</a></li>
-                          <!-- <li class="list__item list__item-click"><a href="" class="list__link list__link-strong list__link--space">Đăng ký</a></li>
-                          <li class="list__item list__item-click"><a href="" class="list__link list__link-strong">Đăng nhập</a></li> -->
+                          <li class="list__item list__item-click"><a href="" id="register" class="list__link list__link-strong list__link--space">Đăng ký</a></li>
+                          <li class="list__item list__item-click"><a href="" id="login" class="list__link list__link-strong">Đăng nhập</a></li>
                           <li class="list__item-user">
-                              <div class="user-login">
+                              <div class="user-login p-0">
                                   <img src="../assets/image/AELONG.png" alt="" class="list__item-user-img">
                                   <span class="list__item-user-name list__li">Long Nguyễn</span>
                               </div>
@@ -271,9 +271,9 @@
                               
                           <!-- Chưa có sản phẩm thì thêm class "cart__list-no-cart"-->
                           <input type="checkbox" hidden id="cart__check" class="cart__check-main">
-                          <div class="cart__list cart__list-no-car">
+                          <div class="cart__list cart__list-no-cart">
                               <div class="no-cart">
-                                  <img src="./assets/image/cart.png" alt="" class="cart__list-img">
+                                  <img src="../assets/image/cart.png" alt="" class="cart__list-img">
                                   <span class="no-cart-description">
                                       Chưa có sản phẩm
                                   </span>
@@ -1054,6 +1054,112 @@ trọng lượng thấp hơn và khí động học tốt hơn.
         </div>
    </footer>
  </div>
+
+ <!-- Dựng modal layout -->
+ <div class="modal">
+    <div class="modal__overlay">
+
+    </div>
+
+    <div class="modal__body">
+    <!-- Form đăng kí -->
+    <div class="form-register">
+        <div class="form__container">
+        <div class="form__header">
+            <h3 class="header-register-r">Đăng ký</h3>
+            <span class="header-login-r">Đăng nhập</span>
+        </div>
+
+        <div class="form__main">
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Nhập Email của bạn tại đây">
+            </div>
+
+            <div class="form__group">
+                <input type="password" class="form__input" placeholder="Nhập mật khẩu của bạn tại đây">
+            </div>
+
+            <div class="form__group">
+                <input type="password" class="form__input" placeholder="Nhập lại mật khẩu của bạn">
+            </div>
+        </div>
+
+        <div class="form__note">
+            <p class="note__content">
+                Bằng việc đăng kí, bạn đã đồng ý với AE Shop về
+                <a href="" class="note__link">Điều khoản dịch vụ</a>
+                & 
+                <a href="" class="note__link">Chính sách bảo mật</a>
+            </p>
+        </div>
+
+        <div class="form__buttons">
+            <button class="btn btn-back-register">Trở lại >></button>
+            <button class="btn btn-color">Đăng ký</button>
+        </div>
+
+    </div>
+
+    <div class="form__socials">  
+        <a href="" class="socials__icon socials__facebook">
+            <i class="fab fa-facebook-square socials__icon-size"></i>
+            <span class="socials__text-facebook">Kết nối với Facebook</span>
+        </a>
+        <a href="" class="socials__icon socials__google">
+            <i class="fab fa-google-plus-square socials__icon-size"></i>
+            <span class="socials__text-google">Kết nối với Google</span>
+        </a>                        
+    </div>
+    </div>
+
+    <!-- Form đăng nhập -->
+    <div class="form-login">
+        <div class="form__container">
+            <div class="form__header">
+                <h3 class="header-login-l">Đăng nhập</h3>
+                <span class="header-register-l">Đăng ký</span>
+            </div>
+
+            <div class="form__main">
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Nhập Email của bạn tại đây">
+                </div>
+
+                <div class="form__group">
+                    <input type="password" class="form__input" placeholder="Nhập mật khẩu của bạn tại đây">
+                </div>
+
+            </div>
+
+            <div class="form__help">
+                <a href="" class="help__link help__link-color">Quên mật khẩu</a>
+                <span class="help__link-space"></span>
+                <a href="" class="help__link ">Cần trợ giúp?</a>
+            </div>
+
+            <div class="form__buttons">
+                <button class="btn btn-back-login">Trở lại >></button>
+                <button class="btn btn-color">Đăng nhập</button>
+            </div>
+
+        </div>
+            
+            <div class="form__socials">
+                <a href="" class="socials__icon socials__facebook">
+                    <i class="fab fa-facebook-square socials__icon-size"></i>
+                    <span class="socials__text-facebook">Đăng nhập với Facebook</span>
+                </a>
+                <a href="" class="socials__icon socials__google">
+                    <i class="fab fa-google-plus-square socials__icon-size"></i>
+                    <span class="socials__text-google">Đăng nhập với Google</span>
+                </a>
+            </div>
+
+    </div>      
+
+    </div>         
+
+    </div>
    
 </body>
 </html>

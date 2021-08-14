@@ -14,6 +14,7 @@ window.onload = () => {
     const btnBackRegister = $('.btn-back-register');
     const btnBackLogin = $('.btn-back-login');
 
+
     btnRegister.onclick = (e) => {
         e.preventDefault();
         modal.style.display = 'flex';
