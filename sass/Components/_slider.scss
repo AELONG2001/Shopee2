@@ -1,0 +1,60 @@
+.banner__slider {
+    overflow: hidden;
+    position: relative;
+    &-list {
+        @include fixUl;
+        cursor: pointer;
+        display: flex;
+        width: 500%;
+        transition: all 0.5s ease;
+        & img {
+            width: 100%;
+            border-radius: 2px
+        }
+    }
+    &-prev--btn {
+        @include btnSlider;
+        left: 0;
+        &::before {
+           @include btnSliderBefore;
+           left: 36%;
+           border-color: transparent $white-color transparent transparent;
+        }
+    }
+    &-next--btn {
+        @include btnSlider;
+        right: 0;
+        &::before {
+           @include btnSliderBefore;
+           left: 66%;
+           border-color: transparent transparent transparent $white-color;
+        }
+    }
+
+    &-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 14px;
+        @include fixUl;
+        display: flex;
+        justify-content: center;
+        &--item {
+            width: 10px;
+            height: 10px;
+            background-color: hsla(0,0%,100%,.4);
+            border: 1px solid hsla(0,0%,53.7%,.4);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        &--item + &--item {
+            margin-left: 8px;
+        }
+    }
+}
+
+.active.banner__slider-dots--item {
+    background-color: $main-color-second;
+    border-color: $main-color-second;
+}

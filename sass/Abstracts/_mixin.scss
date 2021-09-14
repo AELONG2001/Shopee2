@@ -1,0 +1,42 @@
+@mixin btnStyle() {
+    outline: none;
+    border: none;
+}
+
+@mixin btnSlider() {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    @include btnStyle;
+    border-radius: 4px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+@mixin btnSliderBefore() {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 14px 10px;
+    border-style: solid;
+}
+
+@mixin fixUl() {
+    list-style: none;
+    padding-left: 0;
+}
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBetween() {
+    display: flex;
+    justify-content: space-between;
+}

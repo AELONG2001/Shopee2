@@ -6,20 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hello everyone</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="assets/css/base.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/grid.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap">
-        <script  src="./assets/main.js"></script>
+        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/container.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
  <body>  
-  
-     
-     
-   <div class="app">
-    <div class="header-main">
+
         <header class="header">
             <div class="grid grid-library wide-t wide-tablet-pro">
                   <nav class="navbar hide-on-mobile-tablet  wide-p-0">
@@ -27,23 +23,23 @@
                       <ul class="list-left ">
                           <li class="list__item"><a href="" class="list__link list__link--space">Kênh người bán</a></li>
                           <li class="list__item"><a href="" class="list__link list__link--space">Vào ứng dụng trên AE Shop</a></li>
-                  <li class="list__item list__item-click"><a href="" class="list__link  list__link--space">
-                      Tải ứng dụng
-                      <!-- QR code -->
-                      <div class="header_qr">
-                              <img src="./assets/image/qr_code.png" alt="QR code" class="qr_img">
-                          <div class="qr_app">
-                              <a href="" class="qr_img-app">
-                                  <img src="./assets/image/googelplay.png" alt="Google play" class="qr_img-app--download">  
-                              </a>
-  
-                              <a href="" class="qr_img-app">
-                                  <img src="./assets/image/appstore.png" alt="Appstore" class="qr_img-app--download">
-                              </a>
-                          </div>
-                      </div>
-                      </a>
-               </li>
+                          <li class="list__item list__item-click"><a href="" class="list__link  list__link--space">
+                                Tải ứng dụng
+                                <!-- QR code -->
+                                <div class="header_qr">
+                                        <img src="./assets/image/qr_code.png" alt="QR code" class="qr_img">
+                                    <div class="qr_app">
+                                        <a href="" class="qr_img-app">
+                                            <img src="./assets/image/googelplay.png" alt="Google play" class="qr_img-app--download">  
+                                        </a>
+            
+                                        <a href="" class="qr_img-app">
+                                            <img src="./assets/image/appstore.png" alt="Appstore" class="qr_img-app--download">
+                                        </a>
+                                    </div>
+                                </div>
+                                </a>
+                          </li>
                           <li class="list__item-access list__item-center">
                               <span class="no-link">Kết nối</span>
                               <a href="" class="list__link">
@@ -587,16 +583,12 @@
                 </ul>
               </div>
         </header>
-    </div>
 
        <div class="main">
-           <div class="container"> 
- 
-               <div class="grid-library container__row wide-t wide-tablet-pro">
-                   <div class="row row__container">
-                       <!-- Danh mục 2 cột -->
+           <div class="container">
+              <div class="grid-library container__row wide-t wide-tablet-pro">
+                   <!-- <div class="row row__container">                  
                        <div class="col p-2 wide-p-0">
-                               <!-- category: Danh mục -->
                                <nav class="category t-0 m-0">
                                    <div class="category__heading">
                                        <i class="category__heading-icon fas fa-list"></i>
@@ -699,7 +691,7 @@
                                </nav>
                        </div>
 
-                       <!--Thanh trượt category trên mobile  -->
+                      
                        <div class="row">
                            <div class="col p-10">
                             <nav class="mobile__category">
@@ -757,9 +749,9 @@
                            </div>
                         </div>
 
-                       <!-- Danh sách sản phẩm 10 cột -->
+                      
                        <div class="col p-10 wide-p-12">
-                           <!-- sort: Sắp xếp, label: nhãn, page: trang, currently: hiện tại, control: điều khiển -->
+                          
                            <div class="sort hide-on-mobile-tablet wide-p-0">
                                <div class="sort__left">
                                       <span class="sort-label">Sắp xếp theo</span>
@@ -840,7 +832,7 @@
 
                            </div>
                          
-                           <!-- wrap-products -->
+                           
                           
                                  <div class="row wide-tablet-pro">
                                      <div class="col p-2-4 t-4 wide-p-3 m-6 home__products-container">
@@ -862,8 +854,7 @@
                                                        </div>
    
                                                        <div class="products__active">
-                                                           <!-- Muốn hiện tim full thì thêm class="active-liked" -->
-                                                           <div class="active-like active-liked">
+                                                         
                                                                <a href="" class="products-hearts">
                                                                <i class="active-like-heart-empty far fa-heart"></i>
                                                                <i class="active-like-heart-full fas fa-heart"></i>
@@ -879,8 +870,7 @@
                                                                <i class="active-vote-star fas fa-star-half-alt"></i>
                                                                </a>
                                                            </div>
-                                                           <!-- Số lượng đã bán -->
-                                                           <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                          
                                                        </div>
                                                        
                                                        <div class="products-origin">
@@ -922,7 +912,7 @@
                                                      </div>
  
                                                      <div class="products__active">
-                                                         <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                        
                                                          <div class="active-like active-liked">
                                                              <a href="" class="products-hearts">
                                                              <i class="active-like-heart-empty far fa-heart"></i>
@@ -939,8 +929,7 @@
                                                              <i class="active-vote-star fas fa-star"></i>
                                                              </a>
                                                          </div>
-                                                         <!-- Số lượng đã bán -->
-                                                         <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                        
                                                      </div>
                                                      
                                                      <div class="products-origin">
@@ -981,7 +970,7 @@
                                                      </div>
                                                     
                                                      <div class="products__active">
-                                                         <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                         
                                                          <div class="active-like active-liked">
                                                              <a href="" class="products-hearts">
                                                              <i class="active-like-heart-empty far fa-heart"></i>
@@ -998,8 +987,7 @@
                                                              <i class="active-vote-star fas fa-star"></i>
                                                              </a>
                                                          </div>
-                                                         <!-- Số lượng đã bán -->
-                                                         <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                       
                                                      </div>
                                                      
                                                      <div class="products-origin">
@@ -1040,7 +1028,7 @@
                                                      </div>
  
                                                      <div class="products__active">
-                                                         <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                        
                                                          <div class="active-like active-liked">
                                                              <a href="" class="products-hearts">
                                                              <i class="active-like-heart-empty far fa-heart"></i>
@@ -1057,8 +1045,7 @@
                                                              <i class="active-vote-star far fa-star"></i>
                                                              </a>
                                                          </div>
-                                                         <!-- Số lượng đã bán -->
-                                                         <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                       
                                                      </div>
                                                      
                                                      <div class="products-origin">
@@ -1099,7 +1086,7 @@
                                                      </div>
  
                                                      <div class="products__active">
-                                                         <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                       
                                                          <div class="active-like active-liked">
                                                              <a href="" class="products-hearts">
                                                              <i class="active-like-heart-empty far fa-heart"></i>
@@ -1116,8 +1103,7 @@
                                                              <i class="active-vote-star fas fa-star-half-alt"></i>
                                                              </a>
                                                          </div>
-                                                         <!-- Số lượng đã bán -->
-                                                         <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                       
                                                      </div>
                                                      
                                                      <div class="products-origin">
@@ -1158,7 +1144,7 @@
                                                      </div>
  
                                                      <div class="products__active">
-                                                         <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                       
                                                          <div class="active-like active-liked">
                                                              <a href="" class="products-hearts">
                                                              <i class="active-like-heart-empty far fa-heart"></i>
@@ -1175,8 +1161,7 @@
                                                              <i class="active-vote-star fas fa-star"></i>
                                                              </a>
                                                          </div>
-                                                         <!-- Số lượng đã bán -->
-                                                         <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                       
                                                      </div>
                                                      
                                                      <div class="products-origin">
@@ -1214,7 +1199,7 @@
                                                    </div>
 
                                                    <div class="products__active">
-                                                       <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                     
                                                        <div class="active-like active-liked">
                                                            <a href="" class="products-hearts">
                                                            <i class="active-like-heart-empty far fa-heart"></i>
@@ -1231,8 +1216,7 @@
                                                            <i class="active-vote-star fas fa-star"></i>
                                                            </a>
                                                        </div>
-                                                       <!-- Số lượng đã bán -->
-                                                       <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                      
                                                    </div>
                                                    
                                                    <div class="products-origin">
@@ -1268,7 +1252,7 @@
                                                    </div>
                                                   
                                                    <div class="products__active">
-                                                       <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                     
                                                        <div class="active-like active-liked">
                                                            <a href="" class="products-hearts">
                                                            <i class="active-like-heart-empty far fa-heart"></i>
@@ -1285,8 +1269,7 @@
                                                            <i class="active-vote-star fas fa-star"></i>
                                                            </a>
                                                        </div>
-                                                       <!-- Số lượng đã bán -->
-                                                       <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                      
                                                    </div>
                                                    
                                                    <div class="products-origin">
@@ -1322,7 +1305,7 @@
                                                    </div>
 
                                                    <div class="products__active">
-                                                       <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                     
                                                        <div class="active-like active-liked">
                                                            <a href="" class="products-hearts">
                                                            <i class="active-like-heart-empty far fa-heart"></i>
@@ -1339,8 +1322,7 @@
                                                            <i class="active-vote-star far fa-star"></i>
                                                            </a>
                                                        </div>
-                                                       <!-- Số lượng đã bán -->
-                                                       <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                   
                                                    </div>
                                                    
                                                    <div class="products-origin">
@@ -1376,7 +1358,7 @@
                                                    </div>
 
                                                    <div class="products__active">
-                                                       <!-- Muốn hiện tim full thì thêm class="active-liked" -->
+                                                     
                                                        <div class="active-like active-liked">
                                                            <a href="" class="products-hearts">
                                                            <i class="active-like-heart-empty far fa-heart"></i>
@@ -1393,8 +1375,7 @@
                                                            <i class="active-vote-star fas fa-star-half-alt"></i>
                                                            </a>
                                                        </div>
-                                                       <!-- Số lượng đã bán -->
-                                                       <!-- <span class="products__amount-sell">Đã bán 10</span> -->
+                                                   
                                                    </div>
                                                    
                                                    <div class="products-origin">
@@ -1414,91 +1395,350 @@
                                                                
                                  </div>
                                  
+                    </div>
+        
+                    <div>
+                        <ul class="pagination pagination-page">
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                <div class="pagination-icon">
+                                    <svg class="pagination-icon-arrow-left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 511.641 511.641" style="enable-background:new 0 0 511.641 511.641;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M148.32,255.76L386.08,18c4.053-4.267,3.947-10.987-0.213-15.04c-4.16-3.947-10.667-3.947-14.827,0L125.707,248.293
+                                                    c-4.16,4.16-4.16,10.88,0,15.04L371.04,508.667c4.267,4.053,10.987,3.947,15.04-0.213c3.947-4.16,3.947-10.667,0-14.827
+                                                    L148.32,255.76z"/>
+                                            </g>
+                                        </g>
+                                    </svg>    
+                                </div>
+                                </a>
+                            </li>
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link pagination__link-one">
+                                    1
+                                </a>
+                            </li>
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                    2
+                                </a>
+                            </li>
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                    3
+                                </a>
+                            </li>
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                    4
+                                </a>
+                            </li>
+
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                    ...
+                                </a>
+                            </li>
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                    10
+                                </a>
+                            </li>
+
+                            <li class="pagination__list">
+                                <a href="" class="pagination__link">
+                                    <div class="pagination-icon">
+                                        <svg class="pagination-icon-arrow-right" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 490.8 490.8;" xml:space="preserve">
+                                            <path style="fill:#F44336;" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82
+                                                l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262
+                                                c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z"/>
+                                            <path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115
+                                                L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667
+                                                c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z"/>
+                                        </svg>        
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>           
+                   </div> -->
+               
+                   
+                   <!-- slider -->
+                   <div class="row">
+                       <div class="col p-9">
+                          <div class="banner__slider">
+                              <ul class="banner__slider-list">
+        
+                              </ul>
+                              <!-- slider dots -->
+                            <ul class="banner__slider-dots">
+                                <li class="banner__slider-dots--item active" data-index="0">
+                                                        
+                                </li>
+
+                                <li class="banner__slider-dots--item" data-index="1">
+                                                                                              
+                                </li>
+
+                                <li class="banner__slider-dots--item" data-index="2">
+                                                            
+                                </li>
+
+                                <li class="banner__slider-dots--item" data-index="3">
+                                                            
+                                </li>
+
+                                <li class="banner__slider-dots--item" data-index="4">
+                                                            
+                                </li>
+                              </ul>
+                            
+                            
+                                <button class="banner__slider-prev--btn">                                   
+                                </button>
+                                
+                                <button class="banner__slider-next--btn">                                   
+                                </button>
+                          </div>
                        </div>
+    
+                       <div class="col p-3">
+                           <div class="banner__right">
+                               <ul class="banner__right-list">
+                                   <li class="banner__right-item">
+                                       <a href="" class="banner__right-link">
+                                           <img src="https://cf.shopee.vn/file/b48cd4d2bc40148fcc1d79eb8b17b535_xhdpi" alt="Banner-right">
+                                       </a>
+                                   </li>
 
-                       
-                         <!-- pagination: phân trang -->
-                         <ul class="pagination pagination-page">
-                             <li class="pagination__list">
-                                 <a href="" class="pagination__link">
-                                   <div class="pagination-icon">
-                                       <svg class="pagination-icon-arrow-left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                               viewBox="0 0 511.641 511.641" style="enable-background:new 0 0 511.641 511.641;" xml:space="preserve">
-                                           <g>
-                                               <g>
-                                                   <path d="M148.32,255.76L386.08,18c4.053-4.267,3.947-10.987-0.213-15.04c-4.16-3.947-10.667-3.947-14.827,0L125.707,248.293
-                                                       c-4.16,4.16-4.16,10.88,0,15.04L371.04,508.667c4.267,4.053,10.987,3.947,15.04-0.213c3.947-4.16,3.947-10.667,0-14.827
-                                                       L148.32,255.76z"/>
-                                               </g>
-                                           </g>
-                                       </svg>    
-                                   </div>
-                                 </a>
-                               </li>
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link pagination__link-one">
-                                     1
-                                   </a>
-                               </li>
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link">
-                                     2
-                                   </a>
-                               </li>
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link">
-                                     3
-                                   </a>
-                               </li>
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link">
-                                     4
-                                   </a>
-                               </li>
-
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link">
-                                     ...
-                                   </a>
-                               </li>
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link">
-                                     10
-                                   </a>
-                               </li>
-
-                               <li class="pagination__list">
-                                   <a href="" class="pagination__link">
-                                       <div class="pagination-icon">
-                                           <svg class="pagination-icon-arrow-right" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                   viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 490.8 490.8;" xml:space="preserve">
-                                               <path style="fill:#F44336;" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82
-                                                   l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262
-                                                   c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z"/>
-                                               <path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115
-                                                   L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667
-                                                   c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z"/>
-                                           </svg>        
-                                       </div>
-                                   </a>
-                               </li>
-                         </ul>
-                       
+                                   <li class="banner__right-item">
+                                        <a href="" class="banner__right-link">
+                                            <img src="https://cf.shopee.vn/file/f79ea085e5d180d32ed4b058eee31ce6_xhdpi" alt="Banner-right">
+                                        </a>
+                                   </li>
+                               </ul>
+                           </div>
+                      </div>
                    </div>
-               </div>
-              
-           </div>
 
+                   <!-- Category -->
+                   <div class="row">
+                       <div class="col p-12">
+                            <div class="category_box">
+                                <ul class="category_box-list">
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/4e32311e7d872547962d1867d39c9027_xhdpi" alt="image-category">
+                                           <span>Tech Zone - Siêu Thị Điện Tử </span>
+                                        </a>
+                                    </li>
 
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi" alt="image-category">
+                                           <span>Gì Cũng Rẻ - Từ 1K</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/9da9a3acb5520d601f86a90434f455a5_xhdpi" alt="image-category">
+                                           <span>Hoàn Xu 20% - Đơn Từ 0Đ</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/0c09ab833bc29cb260e9b14794c56977_xhdpi" alt="image-category">
+                                           <span>Nạp Thẻ, Hóa Đơn & E-voucher</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/c7decf2ed8cf3b8f03e8595a808bae03_xhdpi" alt="image-category">
+                                           <span>Shopee Số Gì Đây</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/6a574d8298eed44c1062a5f1408e4c2b_xhdpi" alt="image-category">
+                                           <span>Freeship Xtra 70k Mỗi Ngày</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/765ca66457ec08802f74c529f71a99b7_xhdpi" alt="image-category">
+                                           <span>Hàng Hiệu -50%</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/29961f92098bc9153b88332110a91c87_xhdpi" alt="image-category">
+                                           <span>Hàng Quốc Tế - Deal Đồng Giá</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/0a3e3aa16b083d6b7e2c25a8f2c16731_xhdpi" alt="image-category">
+                                           <span>Shopee Premium</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="category_box-item">
+                                        <a href="" class="category_box-link">
+                                           <img src="https://cf.shopee.vn/file/53d059b1f2592c05b8df8ae835950a2b_xhdpi" alt="image-category">
+                                           <span>Yên Tâm Mua Hàng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                       </div>
+                   </div>
+
+                    <!-- Banner middle -->
+                   <div class="row">
+                       <div class="col p-12">
+                           <div class="banner__middle" style="background-image: url('https://cf.shopee.vn/file/e99560eba58aacfaaa821bd029e43c52_xxhdpi');">
+                              
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- Category freeship -->
+                   <div class="row">
+                       <div class="col p-12">
+                           <div class="banner_category-xtra">
+                               <img src="https://cf.shopee.vn/file/61fbe8a9b92afde2bf188170c99a6cc2" alt="Banner-Xtra">
+                               
+                               <div class="banner_category-xtra--content">
+                                    <div class="banner_category-xtra--heading">
+                                        <h4>Sản phẩm bán chạy</h4>
+                                        <a href="">
+                                            Xem thêm
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="row banner_category-xtra--list">
+                                        <div class="col col-xtra p-2 banner_category-xtra--sale">
+                                           <a href="" class="banner_category-xtra--link">
+                                                <div class="banner_category-xtra--product">
+                                                    <img src="https://cf.shopee.vn/file/e817ddfe4e070eadc0e1808d4aa84d6f_tn" alt="product-sale" class="banner_category-xtra--product-img">
+                                                    <div class="banner_category-xtra--product-price">
+                                                        <span>₫</span>
+                                                        375.000
+                                                    </div>
+                                                </div>
+                                           </a>
+                                            <div class="products-sale">
+                                                <div class="products-sale-value">24%</div>
+                                                <div class="products-sale-content">GIẢM</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-xtra p-2 banner_category-xtra--sale">
+                                            <a href="" class="banner_category-xtra--link">
+                                                 <div class="banner_category-xtra--product">
+                                                     <img src="https://cf.shopee.vn/file/da84fd64b62d21957049da26452dbfa6_tn" alt="product-sale" class="banner_category-xtra--product-img">
+                                                     <div class="banner_category-xtra--product-price">
+                                                         <span>₫</span>
+                                                         79.000
+                                                     </div>
+                                                 </div>
+                                            </a>
+                                             <div class="products-sale">
+                                                 <div class="products-sale-value">39%</div>
+                                                 <div class="products-sale-content">GIẢM</div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col col-xtra p-2 banner_category-xtra--sale">
+                                            <a href="" class="banner_category-xtra--link">
+                                                 <div class="banner_category-xtra--product">
+                                                     <img src="https://cf.shopee.vn/file/cf385ab1a184b082276098a75ddac53a_tn" alt="product-sale" class="banner_category-xtra--product-img">
+                                                     <div class="banner_category-xtra--product-price">
+                                                         <span>₫</span>
+                                                         179.550
+                                                     </div>
+                                                 </div>
+                                            </a>
+                                             <div class="products-sale">
+                                                 <div class="products-sale-value">43%</div>
+                                                 <div class="products-sale-content">GIẢM</div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col col-xtra p-2 banner_category-xtra--sale">
+                                            <a href="" class="banner_category-xtra--link">
+                                                 <div class="banner_category-xtra--product">
+                                                     <img src="https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn" alt="product-sale" class="banner_category-xtra--product-img">
+                                                     <div class="banner_category-xtra--product-price">
+                                                         <span>₫</span>
+                                                         48.000
+                                                     </div>
+                                                 </div>
+                                            </a>
+                                             <div class="products-sale">
+                                                 <div class="products-sale-value">40%</div>
+                                                 <div class="products-sale-content">GIẢM</div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col col-xtra p-2 banner_category-xtra--sale">
+                                            <a href="" class="banner_category-xtra--link">
+                                                 <div class="banner_category-xtra--product">
+                                                     <img src="https://cf.shopee.vn/file/8fb7362d758b6c11b1d0397123e61b82_tn" alt="product-sale" class="banner_category-xtra--product-img">
+                                                     <div class="banner_category-xtra--product-price">
+                                                         <span>₫</span>
+                                                         60.000
+                                                     </div>
+                                                 </div>
+                                            </a>
+                                             <div class="products-sale">
+                                                 <div class="products-sale-value">35%</div>
+                                                 <div class="products-sale-content">GIẢM</div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col col-xtra p-2 banner_category-xtra--sale">
+                                            <a href="" class="banner_category-xtra--link">
+                                                 <div class="banner_category-xtra--product">
+                                                     <img src="https://cf.shopee.vn/file/6ce66896463e7f14be5c53636c2205bd_tn" alt="product-sale" class="banner_category-xtra--product-img">
+                                                     <div class="banner_category-xtra--product-price">
+                                                         <span>₫</span>
+                                                         86.000
+                                                     </div>
+                                                 </div>
+                                            </a>
+                                             <div class="products-sale">
+                                                 <div class="products-sale-value">42%</div>
+                                                 <div class="products-sale-content">GIẢM</div>
+                                             </div>
+                                         </div>         
+                                    </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                </div>
+            </div>
 
            
-           <footer class="footer">
+           <!-- <footer class="footer">
                        <div class="grid grid-library wide-tablet-pro">
                            <div class="row footer-content">
                                <div class="col p-2-4 t-6 wide-p-6 m-12">
@@ -1647,10 +1887,10 @@
                            </div>
                        </div>
            </footer>
-       </div>
+       </div> -->
    </div>
 
- 
+        </div>
                    <!-- Dựng modal layout -->
                     <div class="modal">
                     <div class="modal__overlay">
@@ -1756,6 +1996,7 @@
                     </div>         
 
                     </div>
-
+        <script  src="./assets/js/main.js"></script>
+        <script  src="./assets/js/slider.js"></script>
 </body>
 </html>
