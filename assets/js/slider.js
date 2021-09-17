@@ -37,15 +37,17 @@ function renderSlider() {
 
 renderSlider()
 
+
 let sliderMain = $('.banner__slider-list')
 const sliderItems = $$('.banner__slider-item');
-const dotItems = $$('.banner__slider-dots--item');
+const dotItems = $$('.list__dots-item');
 const prevBtn = $('.banner__slider-prev--btn');
 const nextBtn = $('.banner__slider-next--btn');
 const sliderItemWidth = sliderItems[0].offsetWidth;
 const sliderItemLength = sliderItems.length;
 let positionX = 0;
 let index = 0;
+
 
 prevBtn.addEventListener('click', () => {
     handleChangeSlider(-1)
@@ -91,6 +93,7 @@ function handleChangeSlider(direction) {
             positionX = 0;
             dotItems[sliderItemLength - 1].classList.remove('active');
         }
+      
         sliderMain.style = `transform: translateX(${positionX}px)`
 
         dotItems[index].classList.add('active');
@@ -101,4 +104,25 @@ function handleChangeSlider(direction) {
     }
 }
 
-setInterval(function() {handleChangeSlider(1)}, 3000)
+function sliderChangeAuto() {
+    index++
+        positionX =  positionX - sliderItemWidth
+        if(index >= sliderItemLength) {
+            index = 0;
+            positionX = 0;
+            dotItems[sliderItemLength - 1].classList.remove('active');
+        }
+      
+        sliderMain.style = `transform: translateX(${positionX}px)`
+
+        dotItems[index].classList.add('active');
+        const checkActive = $('.active')
+        if(checkActive) {
+            dotItems[index - 1].classList.remove('active');
+        }
+}
+
+// setInterval(() => {sliderChangeAuto()}, 3000)
+
+
+setInterval(() => {handleChangeSlider(1)}, 3000)

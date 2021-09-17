@@ -32,7 +32,7 @@
 }
 
 /* Bỏ khoảng cách gutters cho col */
-.no-gutters .col{
+.no-gutters.col{
     padding-left: 0;
     padding-right: 0;
 }
@@ -319,23 +319,10 @@
         margin-right: -6px;
     }
 
-    /* Bỏ khoảng cách gutters cho row */
-    .row.no-gutters{
-       margin-left: -5px;
-       margin-right: -5px;
-    }
-
     .col{
         padding-left: 6px;
         padding-right: 6px;
     }
-
-     /* Bỏ khoảng cách gutters cho col */
-    .no-gutters .col{
-        padding-left: 5px;
-        padding-right: 5px;
-     }
- 
 
     /* Column PC */
     .p-0{
@@ -362,6 +349,11 @@
     .p-1{
         flex: 0 0 8.33333%;
         width: 8.33333%;
+    }
+
+    .p-1-10 {
+        flex: 0 0 10%;
+        width: 10%;
     }
     
     .p-2{

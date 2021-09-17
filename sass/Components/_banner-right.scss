@@ -1,20 +1,20 @@
-.row{
+.banner__slider-row.row{
     margin-left: -2px;
     margin-right: -2px;
 }
 
-.col{
+.banner__slider-col.col{
     padding-left: 2px;
     padding-right: 2px;
 }
 
 
-.p-9{
+.banner__slider-col.p-9{
     flex: 0 0 70%;
     width: 70%;
 }
 
-.p-3{
+.banner__slider-col.p-3{
     flex: 0 0 30%;
     width: 30%;
 }
@@ -22,6 +22,10 @@
 .banner__right {
     &-list {
         @include fixUl;
+    }
+
+    &-item--second {
+        margin-top: 0.3rem;
     }
    
     &-link {

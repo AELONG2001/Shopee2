@@ -14,12 +14,19 @@
     box-sizing: inherit;
 }
 
+p,
+h3,
+h4 {
+    margin: 0;
+}
+
 html {
     font-size: 42.5%;  /* 100% sẽ bằng 14px --> 42.5% sẽ là 10px */
     line-height: 1.4rem; /* 1rem là 10px --> 1.4 rem = 14px, 1.8rem = 18px(Vì rem kế thừa 42.5% là 10px) --> khi giá trị này tăng --> rem cũng tăng */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
 
 .grid{
     width: 1200px;

@@ -1,5 +1,5 @@
 body {
-    height: 2000px;
+    height: 4000px;
 }
 
 .main {
@@ -1200,6 +1200,7 @@ body {
 /* container */
 .container {
     background-color: #F5F5F5;
+    height: 5000px;
 }
 
 .container__row {

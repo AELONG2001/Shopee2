@@ -32,11 +32,39 @@
 
 @mixin flex() {
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
     justify-content: center;
     align-items: center;
 }
 
 @mixin flexBetween() {
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
     justify-content: space-between;
+}
+
+@mixin flexAlign() {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    align-items: center;
+}
+
+@mixin dsWebkit-box {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+@mixin positionCenter {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
