@@ -122,7 +122,7 @@ function sliderChangeAuto() {
         }
 }
 
-// setInterval(() => {sliderChangeAuto()}, 3000)
+setInterval(() => {sliderChangeAuto()}, 3000)
 
 
-setInterval(() => {handleChangeSlider(1)}, 3000)
+// setInterval(() => {handleChangeSlider(1)}, 3000)

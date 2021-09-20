@@ -1200,11 +1200,14 @@ body {
 /* container */
 .container {
     background-color: #F5F5F5;
-    height: 5000px;
 }
 
 .container__row {
     padding-top: 20px;
+}
+
+.row__container {
+    margin-top: 28px;
 }
 
 .category {
@@ -1334,20 +1337,31 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background-color: rgba(0, 0, 0, 0.1);
+   background-color: rgba(0, 0, 0, 0.04);
    padding: 12px 22px;
    border-radius: 2px;
 }
 
 .sort__left {
+   position: relative;
    display: flex;
    align-items: center;
 }
 
 .sort-label { 
    font-size: 2.5rem;
-   color: var(--black-color);
-   margin-right: 16px;
+   color: #f12f09;
+   text-transform: uppercase;
+   margin-right: 204px;
+}
+
+.sort-label-border {
+    position: absolute;
+    left: -21px;
+    bottom: -11px;
+    width: 180px;
+    height: 3.5px;
+    background-color: #f12f09;
 }
 
 .sort__btn {
@@ -1361,6 +1375,15 @@ body {
 
 .sort__btn:hover {
     background-color: #eee;
+}
+
+.sort__coin {
+    transform: translateX(17px);
+}
+
+.sort__coin img {
+    width: auto;
+    height: 25px;
 }
 
 /* Giá */
@@ -1552,7 +1575,30 @@ body {
 
 /* wrap products */
 .home__products-container {
+    position: relative;
     margin-top: 10px;
+}
+
+.home__products-find-product-same {
+    display: none;
+    position: absolute;
+    left: 6px;
+    bottom: -24px;
+    width: 190px;
+    background-color: var(--main-color-second);
+    z-index: 30;
+}
+
+.home__products-container:hover .home__products-find-product-same {
+    display: block;
+}
+
+
+.home__products-find-product-same p {
+    font-size: 2rem;
+    color: var(--white-color);
+    padding: 10px;
+    text-align: center;
 }
 
 .home__products-list {
@@ -1562,7 +1608,6 @@ body {
 
 .home__products-item {
    position: relative;
-   height: 100%;
    background-color: var(--white-color);
    border-radius: 2px;
    box-shadow: 0 1px 6px #ccc;
@@ -1573,6 +1618,7 @@ body {
 .home__products-item:hover {
    transform: translateY(-1px);
    box-shadow: 0 1px 16px rgba(204, 204, 204, 0.5);
+   border: 1px solid var(--main-color-second);
 }
 
 .home__products-img {
@@ -1586,16 +1632,11 @@ body {
     margin-bottom: 5px;
 }
 
-/* Sử dụng để giới hạn số dòng mô tả sản phẩm */
-.products-img-name { 
-}
-
 .products-name-content {
    color: var(--black-color);
    font-size: 2rem;
-   font-weight: 400;
-   min-height: 7.4rem;
    line-height: 2.7rem;
+   min-height: 5.4rem;
    margin: 10px;
    padding: 0;
    display: -webkit-box;
@@ -1605,35 +1646,33 @@ body {
 }
 
 .products__price {
+   position: relative;
    display: flex;
-   align-items: baseline;
-   flex-wrap: nowrap;
-   margin-top: -20px;
+   justify-content: space-between;
+   margin-top: -10px;
+   padding: 20px 10px 10px 10px;
 }
 
-.products__price-old {
-    color: #666;
-    font-size: 2rem;
-    margin-left: 10px;
-    text-decoration: line-through;
+.products__price-first {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    font-size: 1.4rem;
+    color: var(--main-color);
 }
 
 .products-price-new {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
     color: var(--main-color);
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: 500;
-    margin: 6px 10px 0 4px;
+    margin-left: 8px;
 }
 
-.products-name-content-private {
-    text-align: center;
-}
-
-.products-price-new-private {
-    color: var(--main-color);
-    font-size: 2.7rem;
-    font-weight: 500;
-    margin: 0 auto;
+.products__price-amount {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 1.9rem;
+    color: rgba(0, 0, 0, 0.54)
 }
 
 .products__active {
@@ -1692,17 +1731,20 @@ i.active-like-heart-full {
 }
 
 .products-origin {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
     display: flex;
     justify-content: space-between;
     color: #7c7a7a;
     font-size: 2rem;
     font-weight: 450;
-    margin: 10px;
+    padding: 10px;
+    margin-top: -8px;
+    transform: translateY(-1px);
 }
 
 .products-favorite {
     position: absolute;
-    line-height: 3rem;
+    line-height: 2.3rem;
     left: -4px;
     top: 6px;
     color: #f25220;
@@ -1722,16 +1764,18 @@ i.active-like-heart-full {
 }
 
 .products-favorite span {
-    font-size: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-size: 1.9rem;
     color: var(--white-color);
     font-weight: 500;
-    padding-right: 5px;
+    padding: 5px;
 }
 
 .products-favorite-check {
     font-size: 1.6rem;
     color: var(--white-color);
     padding: 0 3px 0 5px;
+    display: none
 }
 
 /* Thêm nhãn HOT -->  Outstanding : Nổi bật */
@@ -1811,6 +1855,7 @@ i.active-like-heart-full {
 }
 
 .products-sale-value {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
     font-size: 2.2rem;
     color: #f8430c;
     margin: 5px 0 0 4px;
@@ -1818,10 +1863,34 @@ i.active-like-heart-full {
 }
 
 .products-sale-content {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
     font-size: 2rem;
     color: var(--white-color);
     margin-top: 7px;
     font-weight: 500;
+}
+
+/* Show more */
+.show-more {
+    width: 390px;
+    background-color: var(--white-color);
+    margin: 24px auto 30px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.show-more:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.show-more p {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    color: #555;
+    padding: 10px 0;
+    text-align: center;
 }
 
 /* pagination: phân trang */
@@ -1833,7 +1902,7 @@ i.active-like-heart-full {
 /* footer */
 .footer {
    border-top: 4px solid var(--main-color);
-   padding: 16px 0 40px;
+   padding: 40px 0;
    background-color: #f5f6fa;
 }
 
@@ -1899,6 +1968,7 @@ i.active-like-heart-full {
 .footer__apps-download-app {
     display: flex;
     align-items: center;
+    margin-top: 16px;
 } 
 
 .footer__apps-qr {
