@@ -1,23 +1,23 @@
 function renderSlider() {
     const imgSliders = [
         {
-            image: 'https://cf.shopee.vn/file/6e36727796354a86e43e084795b1c71c_xxhdpi',
+            image: './assets/image/banner_slider-1.png',
         },
 
         {
-            image: 'https://cf.shopee.vn/file/73065c7eac86531bb36c85b2f88f82f9_xxhdpi',
+            image: './assets/image/banner_slider-2.png',
         },
 
         {
-            image: 'https://cf.shopee.vn/file/ded5a538bded7b92220de3a84d54c1f9_xxhdpi',
+            image: './assets/image/banner_slider-3.png',
         },
 
         {
-            image: 'https://cf.shopee.vn/file/62ed4775f5a70cfba0f723698e5fbd5e_xxhdpi',
+            image: './assets/image/banner_slider-4.png',
         },
 
         {
-            image: 'https://cf.shopee.vn/file/b5b7b939612461797de8d26341c625be_xxhdpi',
+            image: './assets/image/banner_slider-5.png',
         },
         
     ]
@@ -85,7 +85,8 @@ function handleChangeSlider(direction) {
            dotItems[index + 1].classList.remove('active');
         }
         
-    }else if(direction === 1) {
+    }
+    else if(direction === 1) {
         index++
         positionX =  positionX - sliderItemWidth
         if(index >= sliderItemLength) {
@@ -104,25 +105,25 @@ function handleChangeSlider(direction) {
     }
 }
 
-function sliderChangeAuto() {
-    index++
-        positionX =  positionX - sliderItemWidth
-        if(index >= sliderItemLength) {
-            index = 0;
-            positionX = 0;
-            dotItems[sliderItemLength - 1].classList.remove('active');
-        }
+// function sliderChangeAuto() {
+//     index++
+//         positionX =  positionX - sliderItemWidth
+//         if(index >= sliderItemLength) {
+//             index = 0;
+//             positionX = 0;
+//             dotItems[sliderItemLength - 1].classList.remove('active');
+//         }
       
-        sliderMain.style = `transform: translateX(${positionX}px)`
+//         sliderMain.style = `transform: translateX(${positionX}px)`
 
-        dotItems[index].classList.add('active');
-        const checkActive = $('.active')
-        if(checkActive) {
-            dotItems[index - 1].classList.remove('active');
-        }
-}
+//         dotItems[index].classList.add('active');
+//         const checkActive = $('.active')
+//         if(checkActive) {
+//             dotItems[index - 1].classList.remove('active');
+//         }
+// }
 
-setInterval(() => {sliderChangeAuto()}, 3000)
+// setInterval(() => {sliderChangeAuto()}, 3000)
 
-
-// setInterval(() => {handleChangeSlider(1)}, 3000)
+ 
+setInterval(() => {handleChangeSlider(1)}, 3000)

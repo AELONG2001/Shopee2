@@ -50,6 +50,12 @@ function sliderVoucher(param) {
    
     indexVoucher++
     positionSliderVoucher = positionSliderVoucher - sliderVoucherItemWidth
+    if(indexVoucher <= -1) {
+        indexVoucher = sliderVoucherItemLength - 1
+        positionX = -sliderVoucherItemWidth * sliderVoucherItemLength
+        sliderVoucherDotItems[0].classList.remove('active');
+    }
+
     if( indexVoucher >= sliderVoucherItemLength) {
         indexVoucher = 0
         positionSliderVoucher = 0

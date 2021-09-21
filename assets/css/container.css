@@ -55,12 +55,13 @@
     display: flex;
     width: 500%;
     transition: all 0.5s ease; }
-    .banner__slider-list img {
-      width: 100%;
+  .banner__slider-item {
+    width: 100%;
+    transition: all 0.1s ease; }
+    .banner__slider-item img {
+      width: 839px;
       height: 100%;
       border-radius: 2px; }
-  .banner__slider-item {
-    transition: all 0.1s ease; }
   .banner__slider-prev--btn {
     position: absolute;
     top: 50%;
