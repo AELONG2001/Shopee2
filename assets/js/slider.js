@@ -66,6 +66,7 @@ dotItems.forEach((item) => {
         positionX =  -1 * index * sliderItemWidth
         sliderMain.style = `transform: translateX(${positionX}px)`
     })
+   
 })
 
 function handleChangeSlider(direction) {
@@ -100,30 +101,10 @@ function handleChangeSlider(direction) {
         dotItems[index].classList.add('active');
         const checkActive = $('.active')
         if(checkActive) {
-            dotItems[index - 1].classList.remove('active');
+           dotItems[index - 1].classList.remove('active');
         }
     }
 }
-
-// function sliderChangeAuto() {
-//     index++
-//         positionX =  positionX - sliderItemWidth
-//         if(index >= sliderItemLength) {
-//             index = 0;
-//             positionX = 0;
-//             dotItems[sliderItemLength - 1].classList.remove('active');
-//         }
-      
-//         sliderMain.style = `transform: translateX(${positionX}px)`
-
-//         dotItems[index].classList.add('active');
-//         const checkActive = $('.active')
-//         if(checkActive) {
-//             dotItems[index - 1].classList.remove('active');
-//         }
-// }
-
-// setInterval(() => {sliderChangeAuto()}, 3000)
 
  
 setInterval(() => {handleChangeSlider(1)}, 3000)
