@@ -92,26 +92,14 @@
 
 
 .category__general-main {
+    width: 400px;
     padding: 3px 22px 10px 22px;
 }
 
-
-.category__slider {
-    position: relative;
-    overflow: hidden;
-    width: 380px;
-    cursor: pointer;
-    z-index: 10;
-    &-list {
-        @include fixUl;
-        display: flex;
-        transition: all 0.1s ease-out;
-    }
-    &-item {
-        width: 100%;
-    }
+.category__general-main--img {
+    width: 100%;
+    height: 462px;
 }
-
 
 .category__product {
     position: relative;

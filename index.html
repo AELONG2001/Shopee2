@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap">
+        <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="assets/css/grid.css">
         <link rel="stylesheet" href="assets/css/base.css">
         <link rel="stylesheet" href="assets/css/main.css">
@@ -591,12 +593,13 @@
                    <!-- slider -->
                    <div class="row banner__slider-row">
                        <div class="col p-9 banner__slider-col">
-                          <div class="banner__slider">
-                              <ul class="banner__slider-list">
+                            <div class="banner-slider">
+                                <ul class="owl-carousel">
         
-                              </ul>
+                                </ul>
+                            </div>
                               <!-- slider dots -->
-                               <ul class="list__dots">
+                               <!-- <ul class="list__dots">
                                 <li class="list__dots-item active" data-index="0">
                                                         
                                 </li>
@@ -623,8 +626,7 @@
                                </button>
                                
                                <button class="banner__slider-next--btn">                                   
-                               </button>
-                          </div>
+                               </button> -->
                        </div>
     
                        <div class="col p-3 banner__slider-col">
@@ -1588,25 +1590,19 @@
 
                             <div class="row category__general-content">
                                 <div class="col p-4 category__general-main">
-                                    <div class="category__slider">
-                                        <ul class="category__slider-list">
-                                            
-                                        </ul>
+                                    <ul class="owl-carousel">
+                                        <li class="owl-carousel-item">
+                                            <img src="https://cf.shopee.vn/file/75cf7dbba3c2cb2fc8e639f8896a2594" alt="Banner-slider-middle" class="category__general-main--img">
+                                        </li>
 
-                                        <ul class="list__dots">
-                                            <li class="list__dots-item list__dots-item__category-voucher active" data-index="0">
-                                                                    
-                                            </li>
-            
-                                            <li class="list__dots-item list__dots-item__category-voucher" data-index="1">
-                                                                                                            
-                                            </li>
-            
-                                            <li class="list__dots-item list__dots-item__category-voucher" data-index="2">
-                                                                        
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <li class="owl-carousel-item">
+                                            <img src="https://cf.shopee.vn/file/39b3e8cda843d5b5a661bff9281d779c" alt="Banner-slider-middle" class="category__general-main--img">
+                                        </li>
+
+                                        <li class="owl-carousel-item">
+                                            <img src="https://cf.shopee.vn/file/f0dc63cd98d92dfc5dd8a2cac4fbae6a" alt="Banner-slider-middle" class="category__general-main--img">
+                                        </li>
+                                    </ul>
                                 </div>
 
                                 <div class="col p-8 category__general-col category__general-product">
@@ -3433,12 +3429,13 @@
         </div>
 
 
-        <script  src="./assets/js/main.js"></script>
-        <script  src="./assets/js/slider.js"></script>
-        <script  src="./assets/js/category.js"></script>
-        <script  src="./assets/js/flash-sale.js"></script>
-        <script  src="./assets/js/category-slider.js"></script>
-        <script  src="./assets/js/shopee-mall-product.js"></script>
-        <script  src="./assets//js/category-top-search.js"></script>
+        <script src='./assets/jquery/jquery-3.6.0.js'></script>
+        <script src='./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js'></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/slider.js"></script>
+        <script src="./assets/js/category.js"></script>
+        <script src="./assets/js/flash-sale.js"></script>
+        <script src="./assets/js/shopee-mall-product.js"></script>
+        <script src="./assets//js/category-top-search.js"></script>
 </body>
 </html>
