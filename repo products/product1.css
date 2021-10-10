@@ -72,7 +72,6 @@
 }
 
 
-
 .product1__description {
    display: flex;
    flex-direction: column;
@@ -319,6 +318,12 @@
    border-radius: 2px;
 }
 
+.active.product1__size-main {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 2px; 
+}
+
 .motor {
     min-width: 120px;
 }
@@ -357,7 +362,7 @@
     align-items: center;
     width: 10px;
     height: 10px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .product1__amount-main-input-content {
@@ -380,7 +385,7 @@
     align-items: center;
     width: 10px;
     height: 10px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .product1-btn {
