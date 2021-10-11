@@ -1,0 +1,150 @@
+.header {
+    background: var(--white-color);
+    height: 132px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.navbar {
+    background-color: var(--main-color-second);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar__menu {
+    margin-top: 20px;
+}
+
+.navbar__menu-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__menu-left {
+   display: flex;
+   align-items: center;
+}
+
+.navbar__menu-left-cart p{
+   font-size: 3.4rem;
+   color: var(--main-color-second);
+   padding: 10px;
+   text-transform: capitalize;
+   border-left: 1px solid var(--main-color-second);
+   margin: 10px 0 0 6px;
+}
+
+.logo__shopee-cart {
+    color: var(--main-color-second);
+    fill: currentColor;
+    width: 160px;
+    height: 46px;
+}
+
+.search__bar {
+    width: 540px;
+    margin: 0;
+    border: 2px solid var(--main-color-second);
+}
+
+.bar__btn {
+    height: 100%;
+    margin: 0;
+    border-radius: unset;
+    background-color: var(--main-color-second);
+}
+
+.bar-input {
+    padding: 0 8px;
+}
+
+.bar-input::placeholder {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    opacity: 0.85;
+}
+
+/* container */
+.cart__container {
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    height: 600px;
+}
+
+.cart__voucher {
+   display: flex;
+   padding: 14px;
+   background-color: var(--white-color);
+   border: 1px solid rgba(224, 168, 0, 0.4);
+   border-radius: 2px;
+}
+
+.cart__voucher-icon {
+   
+}
+
+.cart__voucher-content {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  padding-left: 10px;
+}
+
+
+.cart__bill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--white-color);
+  margin-top: 10px;
+}
+
+.cart__bill-left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.create__input-checked {
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 2px;
+}
+
+.active.create__input-checked {
+    background-color: var(--main-color-second);
+    border: 1px solid var(--main-color-second);
+}
+
+.create__input-checked i{
+    font-size: 2rem;
+    color: var(--white-color);
+    padding: 2px;
+}
+
+.cart__bill-left p {
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.9);
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.cart__bill-right {
+   display: flex;
+   align-items: center;
+}
+
+.unit-cart,
+.amount-cart,
+.amount_of_price,
+.operation-cart {
+    font-size: 2.2rem;
+    color: #888;
+    padding: 10px 40px;
+}
+
+.operation-cart {
+    padding-right: 20px;
+}

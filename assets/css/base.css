@@ -61,7 +61,7 @@ html {
 /* growth: lớn lên */
 @keyframes growth {
     from {
-        transform: scale(var(--growth-form));      
+        transform: scale(var(--growth-from));      
     }
 
     to {
@@ -91,15 +91,11 @@ html {
 } 
 
 .modal__body{
-    --growth-form: 0.8;
+    --growth-from: 0.8;
     --growth-to: 1;
     margin: auto;
     z-index: 1;
     animation: growth linear 0.2s;
-} 
-
-.modal__inner{
-
 } 
 
 

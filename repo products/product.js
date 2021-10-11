@@ -82,3 +82,89 @@ function handleAddSubtractInput() {
 }
 
 handleAddSubtractInput()
+
+
+// handle click add card
+function handleClickAddCard() {
+    const btnAddCard = $('.product1-btn-cart')
+    const modalCard = $('.modal__add-card')
+    let count = 1
+   
+   btnAddCard.addEventListener('click', () => {
+     modalCard.classList.toggle('active')
+     setTimeout(() => {
+        modalCard.classList.remove('active')
+     }, 1500)
+
+    //inner Product in Card
+    var hasCard = $('.card__list-content')
+    const noCard = $('.no-cart')
+    const carBtn = $('.cart__btn')
+    const cardAmount = $('.card__amount')
+    
+    cardAmount.innerHTML = `
+       <span class="cart_amount-main">${count}</span>
+    `
+
+    carBtn.style.display = 'block'
+    
+    noCard.classList.remove('cart__list-no-cart')
+
+    let price = 39
+    let newPrice = price * count
+
+    hasCard.innerHTML = `
+                                <div class="has-cart"> 
+                                    <h4 class="cart__heading">Sản phẩm đã thêm</h4>                                
+                                    <ul class="cart__list-products">                     
+                                        <li class="cart___list-item">
+                                            <img src="../assets/image/l-sp-1-1.jpg" alt="" class="cart__item-img-product">
+
+                                            <div class="cart__item-info">
+                                                <div class="cart__info-head">
+                                                        <h5 class="cart__info-name">Áo thun tay nữ form rộng chất liệu vải mềm thoải mái</h5>
+                                                        <!-- price: giá, multiply: dấu nhân, quantity: số lượng, classify: phân loại -->
+                                                    <div class="cart__info-price">
+                                                        <span class="cart__price-main">${newPrice}.000đ</span>
+                                                        <span class="cart__multiply">x</span>
+                                                        <span class="cart__quantity">${count++}</span>
+                                                    </div>
+                                                </div>
+                                                    <div class="cart__info-description">
+                                                            <span class="cart__remove">Xóa</span>
+                                                    </div>
+                                            </div>
+
+                                        </li>                                 
+                                    </ul>
+
+                        `
+     
+   
+
+       function handleRemoveProduct() {
+           const btnRemove = $('.cart__remove')
+           const cardAmountMain = $('.cart_amount-main')
+           btnRemove.addEventListener('click', () => {
+              hasCard.innerHTML = ''
+              noCard.classList.add('cart__list-no-cart')
+              carBtn.style.display = 'none'            
+                cardAmountMain.style.display = 'none'           
+           })
+       }
+
+       handleRemoveProduct()
+
+    })
+
+    //Remove modalCard when click on modalCard
+    modalCard.addEventListener('click', () => {
+        modalCard.classList.remove('active')
+    })
+
+}
+
+handleClickAddCard()
+
+
+
