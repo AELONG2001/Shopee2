@@ -86,46 +86,59 @@ handleAddSubtractInput()
 
 // handle click add card
 function handleClickAddCard() {
-    const btnAddCard = $('.product1-btn-cart')
-    const modalCard = $('.modal__add-card')
+    const btnAddCart = $('.product1-btn-cart')
+    const modalCart = $('.modal__add-card')
+    const addInputAddCart = $('.product1__amount-main-plus')
+    const subtractInputAddCart = $('.product1__amount-main-minus')
+    const inputChangeValue = $('.product1__amount-main-input-content')
     let count = 1
+
+    addInputAddCart.addEventListener('click', () => {
+        count = inputChangeValue.value 
+    })
+
+    
+    subtractInputAddCart.addEventListener('click', () => {
+        count = inputChangeValue.value 
+    })
    
-   btnAddCard.addEventListener('click', () => {
-     modalCard.classList.toggle('active')
+   btnAddCart.addEventListener('click', () => {
+     modalCart.classList.toggle('active')
      setTimeout(() => {
-        modalCard.classList.remove('active')
+        modalCart.classList.remove('active')
      }, 1500)
 
-    //inner Product in Card
-    var hasCard = $('.card__list-content')
-    const noCard = $('.no-cart')
+
+    //inner Product in Cart
+    var hasCart = $('.card__list-content')
+    const noCart = $('.no-cart')
     const carBtn = $('.cart__btn')
-    const cardAmount = $('.card__amount')
+    const cartAmount = $('.cart__amount')
     
-    cardAmount.innerHTML = `
+    cartAmount.innerHTML = `
        <span class="cart_amount-main">${count}</span>
     `
 
     carBtn.style.display = 'block'
     
-    noCard.classList.remove('cart__list-no-cart')
+    noCart.classList.remove('cart__list-no-cart')
 
-    let price = 39
+    let price = 83
     let newPrice = price * count
 
-    hasCard.innerHTML = `
+    hasCart.innerHTML = `
                                 <div class="has-cart"> 
                                     <h4 class="cart__heading">Sản phẩm đã thêm</h4>                                
                                     <ul class="cart__list-products">                     
                                         <li class="cart___list-item">
-                                            <img src="../assets/image/l-sp-1-1.jpg" alt="" class="cart__item-img-product">
+                                            <img src="../assets/image/l-sp-3-1.jpg" alt="" class="cart__item-img-product">
 
                                             <div class="cart__item-info">
                                                 <div class="cart__info-head">
-                                                        <h5 class="cart__info-name">Áo thun tay nữ form rộng chất liệu vải mềm thoải mái</h5>
+                                                        <h5 class="cart__info-name">Áo sơ mi nam nữ Unisex freesize dài tay ngắn tay Basic màu trắng và đen sơ mi lụa mịn mát form rộng SM-Trend</h5>
                                                         <!-- price: giá, multiply: dấu nhân, quantity: số lượng, classify: phân loại -->
                                                     <div class="cart__info-price">
-                                                        <span class="cart__price-main">${newPrice}.000đ</span>
+                                                    <span class="cart__price-main">${newPrice < 1000 ? newPrice : newPrice >= 100000 ? String(newPrice).slice(0, 3) + '.'.concat(String(newPrice).slice(3)) :  newPrice >= 10000 ? String(newPrice).slice(0, 2) + '.'.concat(String(newPrice).slice(2)) : String(newPrice).slice(0, 1) + '.'.concat(String(newPrice).slice(1))}.000đ</span>
                                                         <span class="cart__multiply">x</span>
                                                         <span class="cart__quantity">${count++}</span>
                                                     </div>
@@ -140,16 +153,15 @@ function handleClickAddCard() {
 
                         `
      
-   
 
        function handleRemoveProduct() {
            const btnRemove = $('.cart__remove')
-           const cardAmountMain = $('.cart_amount-main')
+           const cartAmountMain = $('.cart_amount-main')
            btnRemove.addEventListener('click', () => {
-              hasCard.innerHTML = ''
-              noCard.classList.add('cart__list-no-cart')
+              hasCart.innerHTML = ''
+              noCart.classList.add('cart__list-no-cart')
               carBtn.style.display = 'none'            
-                cardAmountMain.style.display = 'none'           
+                cartAmountMain.style.display = 'none'           
            })
        }
 
@@ -157,9 +169,9 @@ function handleClickAddCard() {
 
     })
 
-    //Remove modalCard when click on modalCard
-    modalCard.addEventListener('click', () => {
-        modalCard.classList.remove('active')
+    //Remove modalCart when click on modalCart
+    modalCart.addEventListener('click', () => {
+        modalCart.classList.remove('active')
     })
 
 }
