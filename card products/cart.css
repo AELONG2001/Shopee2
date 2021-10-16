@@ -28,6 +28,7 @@
    align-items: center;
 }
 
+
 .navbar__menu-left-cart p{
    font-size: 3.4rem;
    color: var(--main-color-second);
@@ -35,6 +36,10 @@
    text-transform: capitalize;
    border-left: 1px solid var(--main-color-second);
    margin: 10px 0 0 6px;
+}
+
+.navbar__menu-left-logo {
+    text-decoration: none;
 }
 
 .logo__shopee-cart {
@@ -289,6 +294,10 @@
 }
 
 
+.cart__product-main--find-special i {
+    right: -8px;
+}
+
 .cart__product-voucher {
     display: flex;
     align-items: center;
@@ -326,7 +335,7 @@
     margin-top: 24px;
     background-color: var(--white-color);
     box-shadow: 1px -4px 8px rgba(0, 0, 0, 0.08);
-    transform: translateY(-110px);
+    transform: translateY(-150px);
     user-select: none;
 }
 
@@ -422,6 +431,7 @@
 
 .cart__product-pay-total-left-choose {
    font-size: 2.7rem;
+   line-height: 3.2rem;
    color: rgba(0, 0, 0, 0.82);
    text-transform: capitalize;
    cursor: pointer;
@@ -437,6 +447,7 @@
 
 .cart__product-pay-total-left-save {
    font-size: 2.4rem;
+   line-height: 2.8rem;
    color: var(--main-color-second);
    text-decoration: none;
 }
@@ -449,11 +460,13 @@
 
 .cart__product-pay-total-right-all {
    font-size: 2.7rem;
+   line-height: 3.2rem;
    color: rgba(0, 0, 0, 0.82);
 }
 
 .cart__product-pay-total-right-price {
    font-size: 3.4rem;
+   line-height: 3.8rem;
    color: var(--main-color-second);
    padding: 0 16px;
 }
@@ -555,4 +568,23 @@
 
 .active.cart__table-choose--overlay {
     display: block;
+}
+
+/* PC có độ phân giải từ 1024px > 1239px */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .cart__product-main-price-main {
+        transform: unset;
+    }
+
+    .cart__bill {
+        display: none;
+    }
+
+    .cart__list-product {
+        margin-top: 80px;
+    }
+
+    .search__bar {
+        margin-right: 42px;
+    }
 }

@@ -220,29 +220,31 @@
 }
 
 
-.form__login-social-facebook {
-   background-color: #1877f2;
-}
-
 .form__login-social-img-facebook {
-    transform: translateX(2px);
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 
-.form__login-social-google-main {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white-color);
-    border-radius: 2px;
+
+.form__login-social-facebook {
+   font-size: 2rem;
+   color: var(--white-color);
+   background-color: #1877f2;
+   text-decoration: none;
 }
 
 
 .form__login-social-google {
-    background-color: #4285f4;
+    position: relative;
 }
 
+
+.g-signin2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
 .form__login-social-apple {
     background-color: var(--black-color);
@@ -266,8 +268,14 @@
     padding-left: 7px;
 }
 
-.form__login-social-content-facebook {
-    transform: translateX(2px);
+.form__login-social-content-google {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    user-select: none;
+    display: none;
 }
 
 .form__login-social-content-apple {
@@ -304,4 +312,63 @@
     line-height: 2.6rem;
     margin-top: 40px;
     text-align: center;
+}
+
+
+
+/* Login with google */
+.abcRioButtonContentWrapper {
+    background-color: #4285f4;
+}
+
+.abcRioButtonLightBlue {
+    height: 40px !important;
+    width: 107px !important;
+    border-radius: 2px;
+}
+
+.abcRioButtonIcon {
+    background-color: var(--white-color);
+    border-radius: 2px;
+    margin: 3px 0 0px 3px;
+}
+
+.abcRioButtonContents {
+    position: absolute !important;
+    top: 2px !important;
+    right: -5px !important;
+}
+
+.abcRioButtonContents span{
+    color: var(--white-color) !important;
+}
+
+/* PC có độ phân giải từ 1024px > 1239px */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .container__form-login-left-img {
+        padding-top: 100%;
+    }
+
+    .container__form-login-right {
+        transform: translate(-100px,140px);
+    }
+
+    .form__login-social-google {
+        margin-left: 7px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__apps-download-app {
+        justify-content: center;
+    }
+
 }

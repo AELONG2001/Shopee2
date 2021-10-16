@@ -1383,6 +1383,7 @@
 
 .sort-label { 
    font-size: 2.5rem;
+   line-height: 3rem;
    color: #f12f09;
    text-transform: uppercase;
    margin-right: 204px;
@@ -1941,6 +1942,7 @@ i.active-like-heart-full {
 
 .footer__heading-content {
     font-size: 2.6rem;
+    line-height: 3.2rem;
     color: var(--text-color);
     font-weight: 500;
 } 
@@ -1989,11 +1991,12 @@ i.active-like-heart-full {
 }
 
 .logo_footer-page {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .footer__apps-heading-content {
    font-size: 2.6rem;
+   line-height: 3.2rem;
    color: var(--text-color);
    font-weight: 500;
 } 

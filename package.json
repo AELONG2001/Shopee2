@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "sass": "node-sass sass/container.scss assets/css/container.css -w"
+    "sass": "node-sass sass/container.scss assets/css/container.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AELONG2001/build-web-shoppe#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
   }
 }
