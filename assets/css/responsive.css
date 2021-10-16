@@ -51,6 +51,10 @@
     padding-top: 16px;
   }
 
+  .owl-prev, .owl-next {
+    display: none;
+  }
+
   .banner-middle-rp {
     flex-direction: column;
   }
@@ -690,10 +694,14 @@
  /* Mobile màn hình nhỏ < 330px */
  @media (max-width: 20.625em) {
   .m-6 {
-    flex: 0 0 38%;
-    width: 38%;
+    flex: 0 0 37.5%;
+    width: 37.5%;
   }
 
+  .products__price {
+    padding: 20px 4px 10px 0px;
+}
+  
   .header__sort-bar-link {
     font-size: 2rem;
   }
@@ -715,7 +723,11 @@
 
  .products-img-name, .products-img-name, .products__price-old, .products-price-new, .products-origin 
   {
-   font-size: 1.6rem;
+   font-size: 1.8rem;
+ }
+
+ .products__price-amount {
+   font-size: 1.7rem;
  }
 
  
@@ -744,11 +756,6 @@
 
 .product1__vote-star-main {
     margin: 0 !important;
-}
-
-.products__price-amount {
-  line-height: 2.3rem;
-  text-align: center;
 }
 
 .products__price-first {
