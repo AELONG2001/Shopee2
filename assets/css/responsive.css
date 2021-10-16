@@ -391,6 +391,10 @@
       display: none;
   }
 
+  .m-6 {
+    flex: 0 0 47%;
+    width: 47%;
+  }
   
   .show-on-mobile {
     display: flex;
@@ -636,8 +640,8 @@
  @media (max-width: 24em) {
 
   .m-6 {
-    flex: 0 0 47%;
-    width: 47%;
+    flex: 0 0 45%;
+    width: 45%;
   }
    
   .cart__heading {
@@ -685,8 +689,8 @@
  /* Mobile màn hình nhỏ < 330px */
  @media (max-width: 20.625em) {
   .m-6 {
-    flex: 0 0 40%;
-    width: 40%;
+    flex: 0 0 37%;
+    width: 37%;
   }
 
   .header__sort-bar-link {
